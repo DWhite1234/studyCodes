@@ -1,0 +1,15 @@
+# Collections工具类
+
+```java
+Collections
+    addAll(list, "李白", "杜甫", "王安石", "李商隐");//批量添加
+	synchronizedList(list);//将线程不安全的集合 变为 线程安全的集合
+	unmodifiableList(list);//将此集合变为 不能修改的集合
+	copy(dest, src)//复制集合
+	swap(list, 0, 2);//交换集合的指定元素的位置
+	frequency(list, "李白");//指定元素出现的次数
+	sort(list);//集合排序
+	binarySearch(list, 20);//二分查找集合
+	shuffle(list);//集合打乱
+```
+

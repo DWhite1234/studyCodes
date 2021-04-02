@@ -1,0 +1,94 @@
+# 集合总概述
+
+![1616408067176](../../../../linux/imgs/1616408067176.png)
+
+```java
+Collection
+	add()//可以添加单个元素,也可以添加集合
+	addAll()//把集合中的元素单独拿出来添加
+	remove()
+	removeAll()//删除集合中的集合
+    retainAll()//交集
+    clear()//清空集合
+    contains()//集合中是否包含某个值
+    size()//集合的长度
+    toArray()//将集合转为数组
+    isEmpty()//判断集合是否为空
+    equals()//判断两个集合是否相同
+    
+    遍历方法:
+		1.增强for	
+		2.迭代器
+	-- List  有序 不唯一
+		--LinkedList
+			addFirst()//开头插入
+			addLast()//结尾插入
+			getFirst()//获取开头
+			getLast()//获取结尾
+			removeFirst()//删除开头
+			removeLast()//删除结尾
+		--ArrayList 有序 不唯一 比Collection新增了关于下标的操作方法
+			add(index.ele);
+			get(index);
+			set(index,ele);
+			remove(index);
+			subList(startIndex,endIndex);//返回截取的list
+			indexOf()
+            lastIndexOf()   
+                
+            遍历方法:
+                1.增强for	
+                2.迭代器
+                3.普通for
+	-- Set(唯一性 ,引用类型必须重写 hashCode和equals)
+        相较于Collection没有新增的方法 
+        
+		无序   不是按照添加的顺序进行存贮
+		唯一   数据不能重复
+		
+		--HashSet 无序  唯一
+		
+		--TreeSet(需要比较大小,必须外部比较和内部比较选择一个)
+                    
+			有序： 自然顺序(从下到大)
+            唯一：  数据不能重复
+            
+		--LinkedHashSet
+		
+			有序   照添加的顺序进行存贮
+            唯一   数据不能重复
+		
+Map	(k,v键值对的形式)	
+    map.put("ch", "china")//添加
+    map.get("ru")//通过key获取value
+    map.clear()//清空
+    map.remove("ru");//通过key删除键值对                
+    map.keySet()//获取所有key
+    map.values();//获取所有的value
+    map.entrySet()//获取所有的键值对
+    keys.iterator()//通过keys或者键值对获取迭代器对象    
+	--HashMap
+		 key 无序  唯一
+         key 重复时 后面的value 会替换掉之前的value
+         
+	--TreeMap(需要比较大小,必须外部比较和内部比较选择一个)
+		有序 自然顺序
+        唯一 不能重复
+            
+	--LinkedHashMap
+		key  有序  添加顺序
+        唯一   不能重复
+	
+Arrays方法:
+	1.Arrays.asList()//将数组转为集合,但是以后不能执行添加操作,因为集合长度不可变
+      asList.add(10);//java.lang.UnsupportedOperationException
+```
+
+# String正则替换
+
+```java
+ String s = "ABCDA";
+ s.split()//可以放正则表达式或者,分隔符
+ s.replace()//可以放正则表达式或者字符
+```
+

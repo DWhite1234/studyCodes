@@ -1,0 +1,217 @@
+# localDate获取当前日期以及计算日期差值
+
+```java
+//获取当前日期
+LocalDate now = LocalDate.now();
+//获取指定日期
+LocalDate localDate = LocalDate.of(2020, 2, 18);
+//计算两个日期的差值
+Period period = Period.between(localDate, now);
+//P1Y1M1D-->1年一个月一天
+System.out.println(period);
+//获取差值中的年
+System.out.println("period.getYears() = " + period.getYears());
+//获取差值中的月
+System.out.println("period.getMonths() = " + period.getMonths());
+//获取差值中的天
+System.out.println("period.getDays() = " + period.getDays());
+//获取差值总共多少月
+System.out.println("period.toTotalMonths() = " + period.toTotalMonths());
+```
+
+# localDateTime获取当前日期以及计算日期差值
+
+```java
+//当前日期
+LocalDateTime now = LocalDateTime.now();
+//指定日期
+LocalDateTime time = LocalDateTime.of(2021, 1, 1, 0, 0, 0);
+//计算差值
+Duration duration = Duration.between(time, now);
+//31 28  19
+//两个时间差多少天
+System.out.println("duration.toDays() = " + duration.toDays());
+//两个时间差多小时
+System.out.println("duration.toHours() = " + duration.toHours());
+//两个时间差多少分钟
+System.out.println("duration.toMinutes() = " + duration.toMinutes());
+//两个时间差多少毫秒
+System.out.println("duration.toMillis() = " + duration.toMillis());
+```
+
+# localDateTime日期格式化
+
+## 自定义格式化
+
+```java
+//获取当前时间
+        LocalDateTime l = LocalDateTime.of(2020, 2, 2, 20, 2, 2);
+        //自定义格式化
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd hh:mm:ss E");
+        String format = formatter.format(l);
+        System.out.println("format = " + format);
+```
+
+## 本地格式化
+
+```
+//获取当前时间
+LocalDateTime l = LocalDateTime.now();
+//本地格式化
+DateTimeFormatter formatter = DateTimeFormatter.ofLocalizedDateTime(FormatStyle.SHORT);
+
+String format = formatter.format(l);
+
+System.out.println("format = " + format);
+```
+
+## 预定义格式化
+
+```java
+//获取当前时间
+LocalDateTime l = LocalDateTime.now();
+//预定义格式化
+DateTimeFormatter formatter = DateTimeFormatter.ISO_DATE;
+String format = formatter.format(l);
+System.out.println("format = " + format);
+```
+
+# 指定日期字符串格式化为日期格式
+
+```java
+String s = "2021-10-22 19:09:08";
+DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+
+//格式日期时间
+LocalDateTime parse = LocalDateTime.parse(s, formatter);
+//只格式日期
+LocalDate parse2 = LocalDate.parse(s, formatter);
+//只格式时间
+LocalTime parse3 = LocalTime.parse(s, formatter);
+
+System.out.println(parse);
+System.out.println(parse2);
+System.out.println(parse3);
+```
+
+# system.API
+
+```JAVA
+//1.强制退出
+ System.exit(1)
+//获取当前毫秒数
+ System.currentTimeMillis();
+//获取java配置信息(全部)
+ System.getProperties();
+//获取单个信息
+ String key="java.specification.version"
+ System.getProperty(key);
+
+//数组复制,插入,删除都可用
+		int [] arr = {10,20,30,40};
+
+        int [] newArr = new int[6];
+        /*
+            src       数据源
+            srcPos    数组源开始的下标
+            dest      目标数组
+            destPos   目标数组开始下标
+            length    复制的数量
+             System.arraycopy(src,srcPos,dest,destPos,length);
+         */
+        //完成复制
+        System.arraycopy(arr, 0, newArr, 0, 4);
+```
+
+# String内存分析
+
+```java
+字符串拼接：
+    常量 + 常量 = 常量
+    变量 + 变量 = 变量
+    变量 + 常量 = 变量
+```
+
+
+
+![1616154783563](../../../../linux/imgs/1616154783563.png)
+
+# String使用注意点
+
+```java
+1.String是引用类型,默认值为null
+
+2.字符串有下标
+String str="dasdad";
+ [0,str.length()]
+ 
+3.字符串可以遍历
+for(int i=0;i<str.length();i++){
+	char c=str.charAt(i);
+}
+ 
+```
+
+String.API
+
+```JAVA
+//1.字符串内容比较
+String s = "你好";
+String s1 = "你好";
+
+s.equals(s2)
+
+// 忽略大小写的比较 
+String a = "Ab";
+String b = "aB";
+  
+a.equalsIgnoreCase(b)
+    
+//比较字符大小
+String s1 = "A";// 65
+String s2 = "C";// 67
+        
+s1.compareTo(s2); 
+
+//判断是否为空
+String s1 = null;
+String s2 = " ";
+s2.equals("")//false
+s2.isEmpty()//空指针
+    
+//转大写,小写
+String s = "abcDefGh你好";
+
+s.toUpperCase()
+s.toLowerCase()
+    
+//去除两端空格
+String s1 = " AB   CD  ";
+s1.trim()
+    
+
+//判断指定的字符串 是否在原有字符串内出现过
+String s = "ABCDCECF";
+s.contains("B1");
+s.indexOf("C111")
+s.lastIndexOf("C2222")
+    
+//判断字符串以XXX开始,结束
+s.startsWith("A1")
+s.endsWith("GH")
+    
+//字符串转为字符数组
+String s = "ABCDEFGH";
+    
+char[] chars = s.toCharArray();
+
+//字符数组转字符串
+char[] cs = {'A', 'B', 'C'};
+String s1 = String.copyValueOf(cs);
+
+//截取
+String s = "ABCDEFGH";
+s.substring(1)//从下标1到结束
+s.substring(1, 4)//[1,4)    
+```
+

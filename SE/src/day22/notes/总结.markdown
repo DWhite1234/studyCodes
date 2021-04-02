@@ -1,0 +1,100 @@
+# 函数式接口SAM
+```text
+只有一个抽象方法的接口,可以有别的方法,但是不能是抽象方法
+```
+
+# Lambda表达式
+```text
+1.@FunctionalInterface可以用来检测是否是函数式接口(SAM)
+2.SAM分类
+    消费型接口：有形参，但是返回值类型是void
+    供给型接口：无参，但是有返回值
+    判断型接口: 有参，但是返回值类型是boolean结果。
+    功能型接口: 既有参数又有返回值
+```
+
+# Lambda表达式整个简写流程
+```text
+        /*最初版,匿名内部类
+        Supplier supplier = new Supplier<Person>() {
+            @Override
+            public Person get() {
+                return new Person("张三");
+            }
+        };
+        */
+        /* 进化版 Lambda表达式版
+        Supplier supplier = () -> new Person("李四");
+
+         */
+        /* 方法引用与构造引用简化Lambda表达式
+        Supplier supplier = Person::new;
+
+         */
+        Supplier supplier = Person::new;
+        Object o = supplier.get();
+        System.out.println("o = " + o);
+```
+# optional类
+```text
+    作用:解决显示的判断空指针
+    0.Optional.ofNullable(),of(),包装对象
+    1.get()返回不能为空的值,否则抛出异常
+    2.orElse,如果该值为null为输出,参数中的字符串,否则原样输出
+    3.orElseGet,该方法与get作用一样,如果是null则会抛异常No value present,否则返回对象
+    4.orElseThrow,如果为空会,抛出指定异常,甩锅专用
+        
+```
+
+# Stream流
+```text
+//获取流对象
+        Stream<Integer> integerStream = Stream.of(1, 3, 45, 6);
+        /* 最初版,Stream流处理集合
+        integerStream.filter(new Predicate<Integer>() {
+            @Override
+            public boolean test(Integer integer) {
+                if (integer < 2) {
+                    return false;
+                }
+                return true;
+            }
+        }).forEach(new Consumer<Integer>() {
+            @Override
+            public void accept(Integer integer) {
+                System.out.println(integer);
+            }
+        });
+         */
+
+        /* 流处理配合Lambda,极大的简化了代码,单还不是最终版本
+        integerStream.filter((a)->{return a>2;}).forEach((a)-> System.out.println(a));
+
+         */
+        
+        /*流处理,配合Lambda,配合方法引用,构造引用可以再次简化 Lambda
+        integerStream.filter((a)->{return a>2;}).forEach(System.out::println);
+        
+         */
+        System.out.println(integerStream);
+        
+Lambda原则:
+   1. 只提取重写方法的参数,与方法体,改写成如下形式
+    方法参数   -> {方法体}
+    ()->{System.out.println()  }
+    2.如果没有参数必须写(),如果方法体只有一句语句可以省略{}
+     ()->System.out.println()
+方法引用和构造引用简化Lambda原则:
+    1.如果重写方法的参数和方法体中调用方法的参数一致,则可以进一步简化,以()->System.out.println()为例
+      //方法的调用者::方法名
+      System.out::println 
+```
+# StreamApi
+
+## 中间方法,中间方法可以继续使用 . 调用中间方法
+
+![1617017775223](../../../../linux/imgs/1617017775223.png)
+
+## 终结方法,终结方法不能在继续 用 . 调用方法
+
+![1617017794035](../../../../linux/imgs/1617017794035.png)

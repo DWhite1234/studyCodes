@@ -1,0 +1,143 @@
+# 1.对象流
+```txt
+    1.创建对象输出流
+    ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("D:/obj.txt"));
+    oos.writeObject(new Person("张三", 10));
+    2.创建对象输入流
+    ObjectInputStream ois = new ObjectInputStream(new FileInputStream("D:/obj.txt"));
+    System.out.println("ois.readObject() = " + ois.readObject());
+对象流的注意点:
+    1.该对象需要被序列化
+    2.如果不想某个属性被序列化()
+      Serializable接口:
+        1.transient
+        2.static 
+      Externalizable:重写方法
+        writeExternal(ObjectOutput out) {
+            out.writeInt(age);
+            out.writeDouble(salary);
+        }
+        readExternal(ObjectInput in) {
+         //按照写出的顺序进行读入  赋值给对应的属性
+            age = in.readInt();
+            salary = in.readDouble();
+        } 
+        
+    3.实现序列化的两种方式
+        Serializable:
+            不需要显示提供版本号 
+        Externalizable
+            需要显示提供版本号 
+```
+
+# 打印流
+```text
+PrintStream ps = new PrintStream(new FileOutputStream("D:/ps.txt"));
+PrintStream ps = new PrintStream("D:/ps2.txt");
+
+```
+
+# 属性集
+```text
+        //创建属性集对象
+        Properties properties = new Properties();
+        //添加属性
+        properties.setProperty("ch", "china");
+        properties.setProperty("ja", "japan");
+        properties.setProperty("cc", "chinese");
+        
+        //设置路径持久化,则会在路径处创建文件,并且会中文乱码
+        properties.store(new FileOutputStream("D:/pro.properties"), "测试");
+        //不设置路径持久化,会默认在当前模块下创建文件,并且不会中文乱码,
+        properties.store(new FileOutputStream("pro2.properties"), "测试");
+        
+        //加载配置文件
+        properties.load(new FileInputStream("pro2.properties"));
+        //设置流,输出配置文件
+        properties.list(System.out);
+        //获取单个属性
+        properties.get("ch")
+
+注意点:
+    properties.list(System.out);
+    properties.list(new PrintStream("D:/p.txt"));//不需要别的操作
+    
+    PrintWriter pw =new PrintWriter("D:/p.txt");
+    properties.list(pw);//不需要别的操作
+    pw.flush()//如果用printWriter流则需要进行缓冲刷新
+
+```
+
+# InetAddress类
+```text
+//获取主机对象
+InetAddress inet = InetAddress.getLocalHost()// zt/192.168.1.1   
+//获取主机名
+inet.getHostName();
+//获取ip
+inet.getHostAddress()
+```
+
+# 类的生命周期
+```text
+类的使用：
+    加载 使用 卸载
+
+加载：
+    load : 将字节码文件 读到内存中
+    连接：
+        校验： 校验字节码的合法性
+              cafebaby
+        准备：准备对应的内存（方法区），创建Class对象，为类变量赋默认值，为静态常量赋初始值
+        解析：把字节码中的符号引用替换为对应的直接地址引用
+     类的初始化：
+        1.使用main();
+        2.使用了类中的静态资源
+        3.创建了对象
+        4.反射操作
+        5.子类被初识化 会先触发父类的初识化
+   类的初识化滞后：（使用了类中的资源 但是 此类不会进行初始化）
+       1.子类使用从父亲继承的静态资源 只会导致父类初识化
+       2.调用类中的静态常量 不会导致 本类初始化
+       3.使用该类型创建数组时  不会导致该类初始化
+
+使用
+卸载：
+      1.在堆中没有此类型对象
+      2.类的加载器 ？已经被回收
+      3.没有Class的引用 没有反射使用此类型
+```
+
+# 类的加载器
+```text
+类的加载器：
+ java中通过不同的类的加载器 加载类
+    根加载器： 加载核心类库  String  Integer
+             rt.jar  null
+              BootstrapClassLoader
+    扩展类加载器
+           jre\lib\ext
+             ExtClassLoader
+    应用程序加载器
+          自定义类
+          AppClassLoader
+    自定义类的加载器***
+
+
+当有加载类的任务时  如何分配任务？
+    双亲委托模式
+
+    有加载任务 会先看一下 AppClassLoader 有么有加载过  如果加载过 直接返回 结果 如果没有加载过  将任务给扩展类加载器    如果加载过 直接返回 结果 如果没有加载过
+
+    将任务 再给引导类加载器  如果不该 引导类加载器 加载 将任务 回传 给 扩展类加载器  该此加载器 加载  就进行加载  否则 进行回传  。
+
+
+    1. 防止重复加载
+    2. 防止恶意修改 系统类
+    
+    
+    应用程序加载器  --是否加载过--> 扩展类加载器  --是否加载过-->  根加载器
+
+    根加载器--是否应该自己加载-->  扩展类加载器  --是否应该自己加载-->  应用程序加载器                                      
+```
+
