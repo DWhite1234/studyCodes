@@ -1,3 +1,4 @@
+# 1.maven的配置
 ```xml
 <!-- 配置本地仓库的地址 -->
 	 <localRepository>E:\developInstall\localRepository</localRepository>
