@@ -1,0 +1,6 @@
+#!/bin/bash
+for host in hadoop101 hadoop102 hadoop103
+do
+ echo =============== $host ===============
+ ssh $host jps
+done
