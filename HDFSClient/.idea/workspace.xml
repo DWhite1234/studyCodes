@@ -5,23 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c2e482e9-f481-4095-ac08-0e4646ddf835" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HDFSClient.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/HDFSClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/hdfs-site.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hadoop/core-site.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hadoop/hadoop.xmind" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hadoop/hdfs.site.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hadoop/mapred-site.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hadoop/rsync群发脚本.shell" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hadoop/yarn-site.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/atguigu/HDFSClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/HDFSClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hadoop/hadoop自定义配置文件/core-site.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hadoop/hadoop自定义配置文件/core-site.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hadoop/hadoop自定义配置文件/hdfs.site.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hadoop/hadoop自定义配置文件/hdfs.site.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hadoop/hadoop自定义配置文件/yarn-site.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hadoop/hadoop自定义配置文件/yarn-site.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hadoop/hadoop集群总结.md" beforeDir="false" afterPath="$PROJECT_DIR$/../hadoop/hadoop集群总结.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,18 +60,20 @@
     <selection>jr</selection>
   </component>
   <component name="RunManager" selected="JUnit.HDFSClient.testProperties">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HDFSClient.testGet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="HDFSClient" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="HDFSClient" />
       <extension name="coverage">
         <pattern>
@@ -92,7 +83,22 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.atguigu" />
       <option name="MAIN_CLASS_NAME" value="com.atguigu.HDFSClient" />
-      <option name="METHOD_NAME" value="testGet" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HDFSClient.testFileOrDir" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="HDFSClient" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.atguigu.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.atguigu" />
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.HDFSClient" />
+      <option name="METHOD_NAME" value="testFileOrDir" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -130,22 +136,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HDFSClient.testPut" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="HDFSClient" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.atguigu.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.atguigu" />
-      <option name="MAIN_CLASS_NAME" value="com.atguigu.HDFSClient" />
-      <option name="METHOD_NAME" value="testPut" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="HDFSClient.testRm" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="HDFSClient" />
       <extension name="coverage">
@@ -165,10 +155,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.HDFSClient.testProperties" />
+        <item itemvalue="JUnit.HDFSClient.testFileOrDir" />
+        <item itemvalue="JUnit.HDFSClient" />
         <item itemvalue="JUnit.HDFSClient.testMV" />
         <item itemvalue="JUnit.HDFSClient.testRm" />
-        <item itemvalue="JUnit.HDFSClient.testGet" />
-        <item itemvalue="JUnit.HDFSClient.testPut" />
       </list>
     </recent_temporary>
   </component>
@@ -185,6 +175,7 @@
       <workItem from="1617970383334" duration="261000" />
       <workItem from="1617970661201" duration="463000" />
       <workItem from="1617971733175" duration="3273000" />
+      <workItem from="1618231386571" duration="2099000" />
     </task>
     <servers />
   </component>

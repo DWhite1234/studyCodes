@@ -24,15 +24,15 @@
 		2.添加环境变量
 		#JAVA_HOME
 		export JAVA_HOME=/opt/module/jdk.....
-		export PATH=$PATH:$JAVA_HOME
+		export PATH=$PATH:$JAVA_HOME/bin
 
 		#HADOOP_HOME
 		export HADOOP_HOME=/opt/module/hadoop-3.1.3
-		export PATH=$PATH:$HADOOP_HOME
+		export PATH=$PATH:$HADOOP_HOME/bin
 		export PATH=$PATH:$HADOOP_HOME/sbin
 
 # 4.软件群发
-	1.scp复制资源
+	1.scp复制资源(不常用)
 
 		拉取资源  主机@用户:资源路径                 目标路径
 		scp -r hadoop101@zt:/opt/module/jdk...  /opt/module/
@@ -43,16 +43,21 @@
 
 		rsync -av  资源路径 目标路径
 
-# 5.配置hadoop配置文件
-	core-site.xml
-	dfs-site.xml
-	mapred-site.xml
-	yarn-site.xml
-
+# 5.配置hadoop配置文件,以及workders
+	1.配置文件
+		core-site.xml
+		dfs-site.xml
+		mapred-site.xml
+		yarn-site.xml
+	2.workers(hadoop映射)
+		hadoop101
+		hadoop102	
+		hadoop103
+	3.配置完后需要分发给所有的服务器			
 # 6.集群启动并测试
 
 	1.格式化
-	hadoop fs -format			
+	hdfs namenode -format			
 	2.启动NameNode
 	start-dfs.sh
 	3.启动yarn
@@ -73,5 +78,8 @@
 		ssh-copy-id hadoop101
 		ssh-copy-id hadoop102
 		ssh-copy-id hadoop103
+
+	注意点:
+		发送环境变量时需要root权限,必须给root也配置ssh	
 	2.编写群起,群停脚本
 	3.编写群测脚本	

@@ -2,14 +2,13 @@ package com.atguigu;
 
 
 import org.apache.hadoop.conf.Configuration;
-import org.apache.hadoop.fs.FileStatus;
-import org.apache.hadoop.fs.FileSystem;
-import org.apache.hadoop.fs.Path;
+import org.apache.hadoop.fs.*;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
 import java.io.IOException;
+import java.lang.reflect.Field;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.util.Arrays;
@@ -88,8 +87,24 @@ public class HDFSClient {
      */
     @Test
     public void testProperties() throws IOException {
+        RemoteIterator<LocatedFileStatus> iterator = fs.listFiles(new Path("/"), true);
+        while (iterator.hasNext()) {
+            System.out.println(iterator.next().getPath());
+        }
+    }
+
+    /**
+     * 判断是文件还是目录
+     * @throws IOException
+     */
+    @Test
+    public void testFileOrDir() throws IOException {
         FileStatus[] fileStatuses = fs.listStatus(new Path("/"));
         System.out.println("Arrays.toString(fileStatuses) = " + Arrays.toString(fileStatuses));
+        for (FileStatus status : fileStatuses) {
+
+            System.out.println(status.isDirectory()+"_______"+(status.isDirectory() ? "是目录" : "是文件"));
+        }
     }
 
     @After
