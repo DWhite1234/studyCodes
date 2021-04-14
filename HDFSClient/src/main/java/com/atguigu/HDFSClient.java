@@ -3,12 +3,14 @@ package com.atguigu;
 
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.*;
+import org.apache.hadoop.io.IOUtils;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.io.IOException;
-import java.lang.reflect.Field;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.util.Arrays;
@@ -17,12 +19,13 @@ import java.util.Arrays;
 public class HDFSClient {
 
     private FileSystem fs;
+    private Configuration configuration;
 
     @Before
     public void hdfsInit() throws URISyntaxException, IOException, InterruptedException {
-        Configuration configuration = new Configuration();
+        configuration = new Configuration();
         configuration.set("dfs.replication", "2");
-        fs = FileSystem.get(new URI("hdfs://hadoop101:8020"),configuration , "zt");
+        fs = FileSystem.get(new URI("hdfs://hadoop101:8020"), configuration, "zt");
     }
 
 
@@ -72,7 +75,7 @@ public class HDFSClient {
     }
 
     /**
-     * 移动和重命名
+     * 移动和重命名刷卡机服务费不可无还款了解到FBALKDFJAKSDFJBASKFSADFASDFASDF
      * 效果与linux mv一样
      * @throws IOException
      */
@@ -105,6 +108,38 @@ public class HDFSClient {
 
             System.out.println(status.isDirectory()+"_______"+(status.isDirectory() ? "是目录" : "是文件"));
         }
+    }
+
+    /**
+     * 上传
+     */
+    @Test
+    public void testIO() throws IOException {
+        //开启本地输入流
+        FileInputStream fis = new FileInputStream("E:\\联想电脑管家壁纸.txt");
+        //开启hdfs输出流
+        FSDataOutputStream fdos = fs.create(new Path("/联想电脑管家壁纸.txt"));
+        //流的对拷
+        IOUtils.copyBytes(fis, fdos, configuration);
+        //流的关闭
+        IOUtils.closeStreams(fdos,fis);
+    }
+
+    /**
+     * 下载
+     *
+     * @throws IOException
+     */
+    @Test
+    public void testIODownload() throws IOException {
+        //开启hdfs输入流
+        FSDataInputStream fdis = fs.open(new Path("/联想电脑管家壁纸.txt"));
+        //开启本地输出流
+        FileOutputStream fos = new FileOutputStream("d:/联想电脑管家壁纸.txt");
+        //流的对拷
+        IOUtils.copyBytes(fdis, fos, configuration);
+        //
+        IOUtils.closeStreams(fos,fdis);
     }
 
     @After
