@@ -5,14 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c2e482e9-f481-4095-ac08-0e4646ddf835" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HDFSClient.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/atguigu/HDFSClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/HDFSClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/HDFSClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/atguigu/HDFSClient.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/log4j.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hadoop/hadoop-hdfs面试重点.md" beforeDir="false" afterPath="$PROJECT_DIR$/../hadoop/hadoop-hdfs面试重点.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,17 +71,6 @@
     <selection>jr</selection>
   </component>
   <component name="RunManager" selected="JUnit.HDFSClient">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="HDFSClient" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="HDFSClient" />
       <extension name="coverage">
@@ -197,6 +180,8 @@
       <workItem from="1618393660736" duration="502000" />
       <workItem from="1618397134371" duration="54000" />
       <workItem from="1618397200231" duration="3562000" />
+      <workItem from="1618465614949" duration="19000" />
+      <workItem from="1618465655707" duration="12000" />
     </task>
     <servers />
   </component>
