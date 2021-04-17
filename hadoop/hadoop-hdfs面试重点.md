@@ -108,6 +108,10 @@ datanode主动报告间隔:dfs.blockreport.intervalMsec默认6个小时
 hdfs --daemon start datanode(启动datanode)
 hdfs --daemon start nodemanager(启动nodemanager)
 
+注意点:添加新节点需要平衡数据
+start-balancer.sh
+
+
 # 8.删除旧的节点
 把相对应的节点添加进黑名单,但是有黑名单的前提是在白名单内,一般白名单是在集群搭建之初就考虑好的
 
