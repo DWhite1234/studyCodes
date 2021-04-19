@@ -29,8 +29,8 @@ public class WordCount {
         job.setOutputKeyClass(Text.class);
         job.setMapOutputValueClass(IntWritable.class);
         //7.指定输入输出路径
-        FileInputFormat.setInputPaths(job, new Path(args[0]));
-        FileOutputFormat.setOutputPath(job, new Path(args[1]));
+        FileInputFormat.setInputPaths(job, new Path("D:\\wordcount.txt"));
+        FileOutputFormat.setOutputPath(job, new Path("d:/output/TextOutput2"));
         //8.提交任务
         boolean result = job.waitForCompletion(true);
         System.exit(result?0:1);
