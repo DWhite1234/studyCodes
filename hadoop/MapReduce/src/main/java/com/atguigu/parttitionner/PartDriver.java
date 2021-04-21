@@ -30,8 +30,10 @@ public class PartDriver {
         job.setPartitionerClass(PartPartitioner.class);
         job.setNumReduceTasks(5);
 
+        job.setCombinerClass(PartCombiner.class);
+
         FileInputFormat.setInputPaths(job, new Path("d:/phones.txt"));
-        FileOutputFormat.setOutputPath(job, new Path("d:/output/partA1"));
+        FileOutputFormat.setOutputPath(job, new Path("d:/output/partA7"));
 
         job.waitForCompletion(true);
     }

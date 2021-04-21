@@ -1,0 +1,3 @@
+在对应的map或reduce方法中声明即可
+                    计数器组    计数器名字   每次加1
+context.getCounter("mucount", "MapCount").increment(1);

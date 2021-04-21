@@ -5,19 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="76eb7391-8735-405e-b98b-b194271fe0ee" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/parttitionner/PartBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/parttitionner/PartDriver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/parttitionner/PartMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/parttitionner/PartPartitioner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/parttitionner/PartReducer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/writableComparable/FlowBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/writableComparable/FlowDriver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/writableComparable/FlowMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/writableComparable/FlowReducer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../分区原理以及自定义分区.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../排序.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../pictures/partitioner.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MapJoin.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/mapJoin/MapJoinDriver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/mapJoin/MapJoinMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/output/CustRecordWriter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/output/MyOutput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/output/WordCount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/output/WordCountMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/output/WordCountReducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/parttitionner/PartCombiner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/reduceJoin/ReduceJoinBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/reduceJoin/reduceJoinDriver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/reduceJoin/reduceJoinMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/reduceJoin/reduceJoinReducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../reduceJoin.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../自定义output.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/atguigu/parttitionner/PartDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/parttitionner/PartDriver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/atguigu/wordcount/WordCount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/wordcount/WordCount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/wordcount/WordCount.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/atguigu/wordcount/WordCount.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MapReduce工作机制.md" beforeDir="false" afterPath="$PROJECT_DIR$/../MapReduce工作机制.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../分区原理以及自定义分区.md" beforeDir="false" afterPath="$PROJECT_DIR$/../分区原理以及自定义分区.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../subline破解" beforeDir="false" afterPath="$PROJECT_DIR$/../../subline破解" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,49 +84,28 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../0225/04_尚硅谷大数据技术之Hadoop/3.代码/mapreduce-demo" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/atguigu/output" />
     <property name="settings.editor.selected.configurable" value="build.tools" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.atguigu.reduceJoin" />
+      <recent name="com.atguigu.output" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\studyCodes\hadoop\MapReduce\src\main\java\com\atguigu\output" />
       <recent name="E:\studyCodes\hadoop\MapReduce\src\main\java\com\atguigu\writableComparable" />
       <recent name="E:\studyCodes\hadoop\MapReduce\src\main\java\com\atguigu\combineTextInputFormat" />
       <recent name="E:\studyCodes\MapReduce\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.PartDriver">
-    <configuration name="CombineWordCount" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.atguigu.combineTextInputFormat.CombineWordCount" />
+  <component name="RunManager" selected="Application.MapJoinDriver">
+    <configuration name="MapJoinDriver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.mapJoin.MapJoinDriver" />
       <module name="MapReduce" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.atguigu.combineTextInputFormat.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FlowDriver (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.atguigu.writableComparable.FlowDriver" />
-      <module name="MapReduce" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.atguigu.writableComparable.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FlowDriver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.atguigu.parttitionner.FlowDriver" />
-      <module name="MapReduce" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.atguigu.parttitionner.*" />
+          <option name="PATTERN" value="com.atguigu.mapJoin.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -138,12 +126,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="WordCount (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.output.WordCount" />
+      <module name="MapReduce" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.atguigu.output.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="WordCount" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.atguigu.wordcount.WordCount" />
       <module name="MapReduce" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.atguigu.wordcount.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="reduceJoinDriver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.reduceJoin.reduceJoinDriver" />
+      <module name="MapReduce" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.atguigu.reduceJoin.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -164,11 +178,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MapJoinDriver" />
+        <item itemvalue="Application.reduceJoinDriver" />
+        <item itemvalue="Application.WordCount (1)" />
         <item itemvalue="Application.PartDriver" />
-        <item itemvalue="Application.FlowDriver (2)" />
-        <item itemvalue="Application.FlowDriver (1)" />
         <item itemvalue="Application.WordCount" />
-        <item itemvalue="Application.CombineWordCount" />
       </list>
     </recent_temporary>
   </component>
@@ -190,7 +204,9 @@
       <workItem from="1618726140217" duration="9483000" />
       <workItem from="1618750208752" duration="2056000" />
       <workItem from="1618791235790" duration="655000" />
-      <workItem from="1618804221654" duration="13386000" />
+      <workItem from="1618804221654" duration="13989000" />
+      <workItem from="1618842633803" duration="1745000" />
+      <workItem from="1618912963019" duration="9723000" />
     </task>
     <servers />
   </component>
@@ -327,11 +343,6 @@
           <option name="timeStamp" value="43" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/atguigu/wordcount/WordCount.java</url>
-          <line>34</line>
-          <option name="timeStamp" value="44" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
           <url>jar://$PROJECT_DIR$/../../../developInstall/localRepository/org/apache/hadoop/hadoop-mapreduce-client-core/3.1.3/hadoop-mapreduce-client-core-3.1.3-sources.jar!/org/apache/hadoop/mapreduce/Job.java</url>
           <line>1539</line>
           <option name="timeStamp" value="45" />
@@ -356,5 +367,10 @@
         <PinnedItemInfo parentTag="org.apache.hadoop.mapreduce.Cluster" memberName="client" />
       </pinned-members>
     </pin-to-top-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="bean" language="JAVA" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

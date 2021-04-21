@@ -1,4 +1,4 @@
-package com.atguigu.wordcount;
+package com.atguigu.output;
 
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.Path;
@@ -6,7 +6,6 @@ import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Job;
 import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
-import org.apache.hadoop.mapreduce.lib.input.FixedLengthInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 
 import java.io.IOException;
@@ -28,11 +27,10 @@ public class WordCount {
         //6.指定最终输出的(k,v)输出类型
         job.setOutputKeyClass(Text.class);
         job.setMapOutputValueClass(IntWritable.class);
-
-        job.setCombinerClass(WordCountReducer.class);
+        job.setOutputFormatClass(MyOutput.class);
         //7.指定输入输出路径
         FileInputFormat.setInputPaths(job, new Path("D:\\wordcount.txt"));
-        FileOutputFormat.setOutputPath(job, new Path("d:/output/TextOutput3"));
+        FileOutputFormat.setOutputPath(job, new Path("d:/output/TextOutput5"));
         //8.提交任务
         boolean result = job.waitForCompletion(true);
         System.exit(result?0:1);
