@@ -1,0 +1,41 @@
+# 1.yarn架构
+```txt
+1.角色
+常驻角色:RosourceManager(yarn老大),NodeManager(节点老大)
+临时角色:AppMaster(每个任务都有一个类似项目经理),container(任务运行环境)
+2.作用
+RosourceManager
+    1.管理整个集群的cpu,内存资源(资源的分配与调度)
+    2.接受来自客户端的请求
+    3.监控nodemanager
+    4.启动AppMaster
+NodeManager:
+    1.管理当前节点的内容,向RM报告自己所拥有的资源
+    2.接受ResourceManager的命令
+    3.接受AppMaster的命令
+AppMaster:
+    1.负责数据的切分
+    2.为应用程序申请资源,并且分配内部任务
+    3.任务的监控与容错
+Container:
+    1.是yarn的抽象
+    2.封装了节点的多种资源,cpu,内存,磁盘,网络
+```
+
+# 2.yarn的工作机制
+```txt
+1.job提交任务,向resourceManager申请应用
+2.resourceManager返回应用资源提交路径
+3.job向该路径下提交资源(job,xml,split)
+4.资源提交完毕,申请运行AppMaster
+5.RM把请求初始化为一个task,进入(容量调度)FiFo调度队列中等待
+6.nm领取任务
+7.nm创建运行所需容器container(Cpu,Ram),并产生AppMaster
+8.container下载任务运行所需资源(job,xml,split)
+9.AppMaster申请运行MapTask容器
+10.RM分配任务给另外两个nm,nm领取任务创建容器
+11.AppMaster给对应的nm发送程序启动脚本,nm分别启动MapTask,MapTask获取对应分区的数据
+12.Appmaster等待所有的MpaTask运行完毕后,向RM申请容器,运行ReduceTask
+13.ReduceTask向MapTask获取相应分区的数据
+14.程序运行完毕后,释放资源
+```

@@ -15,10 +15,4 @@ public class PartReducer extends Reducer<PartBean,Text,Text,PartBean> {
             context.write(value, key);
         }
     }
-    //    @Override
-//    protected void reduce(Text key, Iterable<PartBean> values, Context context) throws IOException, InterruptedException {
-//        for (PartBean value : values) {
-//            context.write(key, value);
-//        }
-//    }
 }

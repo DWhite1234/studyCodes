@@ -20,14 +20,4 @@ public class PartMapper extends Mapper<LongWritable, Text,PartBean,Text> {
         outk.set(split[0]);
         context.write(outv,outk );
     }
-
-    //    @Override
-//    protected void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException {
-//        String[] split = value.toString().split("\t");
-//        outv.setUpFlow(Integer.parseInt(split[1]));
-//        outv.setDownFlow(Integer.parseInt(split[2]));
-//        outv.setSumFlow();
-//        outk.set(split[0]);
-//        context.write(outk,outv );
-//    }
 }

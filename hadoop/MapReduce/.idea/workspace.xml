@@ -5,28 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="76eb7391-8735-405e-b98b-b194271fe0ee" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../MapJoin.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/mapJoin/MapJoinDriver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/mapJoin/MapJoinMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/output/CustRecordWriter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/output/MyOutput.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/output/WordCount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/output/WordCountMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/output/WordCountReducer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/parttitionner/PartCombiner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/reduceJoin/ReduceJoinBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/reduceJoin/reduceJoinDriver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/reduceJoin/reduceJoinMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/reduceJoin/reduceJoinReducer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../reduceJoin.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../自定义output.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/compress/TestCompress.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/atguigu/parttitionner/PartDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/parttitionner/PartDriver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/atguigu/parttitionner/PartMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/parttitionner/PartMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/atguigu/parttitionner/PartReducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/parttitionner/PartReducer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/atguigu/wordcount/WordCount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/wordcount/WordCount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/mapJoin/MapJoinDriver.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/atguigu/mapJoin/MapJoinDriver.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/parttitionner/PartDriver.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/atguigu/parttitionner/PartDriver.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/wordcount/WordCount.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/atguigu/wordcount/WordCount.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../MapReduce工作机制.md" beforeDir="false" afterPath="$PROJECT_DIR$/../MapReduce工作机制.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../分区原理以及自定义分区.md" beforeDir="false" afterPath="$PROJECT_DIR$/../分区原理以及自定义分区.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../subline破解" beforeDir="false" afterPath="$PROJECT_DIR$/../../subline破解" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +87,7 @@
       <recent name="E:\studyCodes\MapReduce\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MapJoinDriver">
+  <component name="RunManager" selected="Application.PartDriver">
     <configuration name="MapJoinDriver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.atguigu.mapJoin.MapJoinDriver" />
       <module name="MapReduce" />
@@ -126,12 +114,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WordCount (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.atguigu.output.WordCount" />
+    <configuration name="TestCompress" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.compress.TestCompress" />
       <module name="MapReduce" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.atguigu.output.*" />
+          <option name="PATTERN" value="com.atguigu.compress.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -178,11 +166,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MapJoinDriver" />
-        <item itemvalue="Application.reduceJoinDriver" />
-        <item itemvalue="Application.WordCount (1)" />
         <item itemvalue="Application.PartDriver" />
         <item itemvalue="Application.WordCount" />
+        <item itemvalue="Application.TestCompress" />
+        <item itemvalue="Application.MapJoinDriver" />
+        <item itemvalue="Application.reduceJoinDriver" />
       </list>
     </recent_temporary>
   </component>
@@ -207,6 +195,10 @@
       <workItem from="1618804221654" duration="13989000" />
       <workItem from="1618842633803" duration="1745000" />
       <workItem from="1618912963019" duration="9723000" />
+      <workItem from="1618988782016" duration="440000" />
+      <workItem from="1619003487662" duration="4929000" />
+      <workItem from="1619057587498" duration="7517000" />
+      <workItem from="1619076198801" duration="880000" />
     </task>
     <servers />
   </component>
@@ -352,11 +344,126 @@
           <line>108</line>
           <option name="timeStamp" value="46" />
         </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/atguigu/parttitionner/PartMapper.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="49" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$PROJECT_DIR$/../../../developInstall/localRepository/org/apache/hadoop/hadoop-mapreduce-client-core/3.1.3/hadoop-mapreduce-client-core-3.1.3-sources.jar!/org/apache/hadoop/mapreduce/Mapper.java</url>
+          <line>148</line>
+          <option name="timeStamp" value="53" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$PROJECT_DIR$/../../../developInstall/localRepository/org/apache/hadoop/hadoop-mapreduce-client-core/3.1.3/hadoop-mapreduce-client-core-3.1.3-sources.jar!/org/apache/hadoop/mapred/MapTask.java</url>
+          <line>799</line>
+          <option name="timeStamp" value="54" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$PROJECT_DIR$/../../../developInstall/localRepository/org/apache/hadoop/hadoop-mapreduce-client-core/3.1.3/hadoop-mapreduce-client-core-3.1.3-sources.jar!/org/apache/hadoop/mapred/MapTask.java</url>
+          <line>804</line>
+          <option name="timeStamp" value="55" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$PROJECT_DIR$/../../../developInstall/localRepository/org/apache/hadoop/hadoop-mapreduce-client-core/3.1.3/hadoop-mapreduce-client-core-3.1.3-sources.jar!/org/apache/hadoop/mapred/MapTask.java</url>
+          <line>734</line>
+          <option name="timeStamp" value="56" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$PROJECT_DIR$/../../../developInstall/localRepository/org/apache/hadoop/hadoop-mapreduce-client-core/3.1.3/hadoop-mapreduce-client-core-3.1.3-sources.jar!/org/apache/hadoop/mapred/MapTask.java</url>
+          <line>738</line>
+          <option name="timeStamp" value="57" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$PROJECT_DIR$/../../../developInstall/localRepository/org/apache/hadoop/hadoop-mapreduce-client-core/3.1.3/hadoop-mapreduce-client-core-3.1.3-sources.jar!/org/apache/hadoop/mapred/MapTask.java</url>
+          <line>1504</line>
+          <option name="timeStamp" value="58" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$PROJECT_DIR$/../../../developInstall/localRepository/org/apache/hadoop/hadoop-mapreduce-client-core/3.1.3/hadoop-mapreduce-client-core-3.1.3-sources.jar!/org/apache/hadoop/mapred/MapTask.java</url>
+          <line>1624</line>
+          <option name="timeStamp" value="59" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$PROJECT_DIR$/../../../developInstall/localRepository/org/apache/hadoop/hadoop-mapreduce-client-core/3.1.3/hadoop-mapreduce-client-core-3.1.3-sources.jar!/org/apache/hadoop/mapred/MapTask.java</url>
+          <line>1628</line>
+          <option name="timeStamp" value="60" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$PROJECT_DIR$/../../../developInstall/localRepository/org/apache/hadoop/hadoop-mapreduce-client-core/3.1.3/hadoop-mapreduce-client-core-3.1.3-sources.jar!/org/apache/hadoop/mapred/MapTask.java</url>
+          <line>1526</line>
+          <option name="timeStamp" value="61" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$PROJECT_DIR$/../../../developInstall/localRepository/org/apache/hadoop/hadoop-mapreduce-client-core/3.1.3/hadoop-mapreduce-client-core-3.1.3-sources.jar!/org/apache/hadoop/mapred/ReduceTask.java</url>
+          <line>323</line>
+          <option name="timeStamp" value="62" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$PROJECT_DIR$/../../../developInstall/localRepository/org/apache/hadoop/hadoop-mapreduce-client-core/3.1.3/hadoop-mapreduce-client-core-3.1.3-sources.jar!/org/apache/hadoop/mapred/ReduceTask.java</url>
+          <line>332</line>
+          <option name="timeStamp" value="63" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$PROJECT_DIR$/../../../developInstall/localRepository/org/apache/hadoop/hadoop-mapreduce-client-core/3.1.3/hadoop-mapreduce-client-core-3.1.3-sources.jar!/org/apache/hadoop/mapred/ReduceTask.java</url>
+          <line>376</line>
+          <option name="timeStamp" value="65" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$PROJECT_DIR$/../../../developInstall/localRepository/org/apache/hadoop/hadoop-mapreduce-client-core/3.1.3/hadoop-mapreduce-client-core-3.1.3-sources.jar!/org/apache/hadoop/mapred/ReduceTask.java</url>
+          <line>381</line>
+          <option name="timeStamp" value="66" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$PROJECT_DIR$/../../../developInstall/localRepository/org/apache/hadoop/hadoop-mapreduce-client-core/3.1.3/hadoop-mapreduce-client-core-3.1.3-sources.jar!/org/apache/hadoop/mapreduce/task/reduce/Shuffle.java</url>
+          <line>76</line>
+          <option name="timeStamp" value="67" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$PROJECT_DIR$/../../../developInstall/localRepository/org/apache/hadoop/hadoop-mapreduce-client-core/3.1.3/hadoop-mapreduce-client-core-3.1.3-sources.jar!/org/apache/hadoop/mapreduce/task/reduce/Shuffle.java</url>
+          <line>79</line>
+          <option name="timeStamp" value="68" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$PROJECT_DIR$/../../../developInstall/localRepository/org/apache/hadoop/hadoop-mapreduce-client-core/3.1.3/hadoop-mapreduce-client-core-3.1.3-sources.jar!/org/apache/hadoop/mapreduce/task/reduce/ShuffleSchedulerImpl.java</url>
+          <line>119</line>
+          <option name="timeStamp" value="69" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$PROJECT_DIR$/../../../developInstall/localRepository/org/apache/hadoop/hadoop-mapreduce-client-core/3.1.3/hadoop-mapreduce-client-core-3.1.3-sources.jar!/org/apache/hadoop/mapreduce/task/reduce/MergeManagerImpl.java</url>
+          <line>146</line>
+          <option name="timeStamp" value="70" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$PROJECT_DIR$/../../../developInstall/localRepository/org/apache/hadoop/hadoop-mapreduce-client-core/3.1.3/hadoop-mapreduce-client-core-3.1.3-sources.jar!/org/apache/hadoop/mapreduce/task/reduce/MergeManagerImpl.java</url>
+          <line>231</line>
+          <option name="timeStamp" value="71" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$PROJECT_DIR$/../../../developInstall/localRepository/org/apache/hadoop/hadoop-mapreduce-client-core/3.1.3/hadoop-mapreduce-client-core-3.1.3-sources.jar!/org/apache/hadoop/mapreduce/task/reduce/Shuffle.java</url>
+          <line>106</line>
+          <option name="timeStamp" value="73" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$PROJECT_DIR$/../../../developInstall/localRepository/org/apache/hadoop/hadoop-mapreduce-client-core/3.1.3/hadoop-mapreduce-client-core-3.1.3-sources.jar!/org/apache/hadoop/mapreduce/task/reduce/Shuffle.java</url>
+          <line>140</line>
+          <option name="timeStamp" value="74" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/atguigu/parttitionner/PartReducer.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="75" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$PROJECT_DIR$/../../../developInstall/localRepository/org/apache/hadoop/hadoop-mapreduce-client-core/3.1.3/hadoop-mapreduce-client-core-3.1.3-sources.jar!/org/apache/hadoop/mapred/ReduceTask.java</url>
+          <line>389</line>
+          <option name="timeStamp" value="76" />
+        </line-breakpoint>
         <breakpoint type="java-exception">
           <properties class="java.lang.Exception" package="java.lang" />
           <option name="timeStamp" value="11" />
         </breakpoint>
-        <breakpoint enabled="true" type="java-exception">
+        <breakpoint type="java-exception">
           <properties class="java.lang.NullPointerException" package="java.lang" />
           <option name="timeStamp" value="47" />
         </breakpoint>

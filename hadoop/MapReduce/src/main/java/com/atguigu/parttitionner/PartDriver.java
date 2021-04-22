@@ -33,7 +33,7 @@ public class PartDriver {
         job.setCombinerClass(PartCombiner.class);
 
         FileInputFormat.setInputPaths(job, new Path("d:/phones.txt"));
-        FileOutputFormat.setOutputPath(job, new Path("d:/output/partA7"));
+        FileOutputFormat.setOutputPath(job, new Path("d:/output/partA3"));
 
         job.waitForCompletion(true);
     }
