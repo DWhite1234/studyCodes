@@ -1295,7 +1295,17 @@
       <ClassName>org.apache.hadoop.hive.ql.udf.UDFYear</ClassName>
       <AutoCreated>1</AutoCreated>
     </routine>
-    <table id="264" parent="2" name="mydb3_test">
+    <table id="264" parent="2" name="action">
+      <RowFormatSerde>org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe</RowFormatSerde>
+      <SerdeProperties>field.delim
+\t</SerdeProperties>
+      <InputFormat>org.apache.hadoop.mapred.TextInputFormat</InputFormat>
+      <OutputFormat>org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat</OutputFormat>
+      <Location>hdfs://hadoop101:8020/user/hive/warehouse/action</Location>
+      <Properties>bucketing_version
+2</Properties>
+    </table>
+    <table id="265" parent="2" name="mydb3_test">
       <RowFormatSerde>org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe</RowFormatSerde>
       <InputFormat>org.apache.hadoop.mapred.TextInputFormat</InputFormat>
       <OutputFormat>org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat</OutputFormat>
@@ -1303,7 +1313,7 @@
       <Properties>bucketing_version
 2</Properties>
     </table>
-    <table id="265" parent="2" name="test">
+    <table id="266" parent="2" name="test">
       <RowFormatSerde>org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe</RowFormatSerde>
       <SerdeProperties>collection.delim
 _
@@ -1319,35 +1329,66 @@ mapkey.delim
       <Properties>bucketing_version
 2</Properties>
     </table>
-    <table id="266" parent="3" name="coun">
+    <table id="267" parent="3" name="action">
+      <RowFormatSerde>org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe</RowFormatSerde>
+      <SerdeProperties>field.delim
+\t</SerdeProperties>
+      <InputFormat>org.apache.hadoop.mapred.TextInputFormat</InputFormat>
+      <OutputFormat>org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat</OutputFormat>
+      <Location>hdfs://hadoop101:8020/user/hive/warehouse/action</Location>
+      <Properties>bucketing_version
+2</Properties>
+    </table>
+    <table id="268" parent="3" name="business">
       <Temporary>1</Temporary>
     </table>
-    <table id="267" parent="3" name="movie_info">
+    <table id="269" parent="3" name="coun">
       <Temporary>1</Temporary>
     </table>
-    <table id="268" parent="3" name="partition_1">
+    <table id="270" parent="3" name="gulivideo_orc">
       <Temporary>1</Temporary>
     </table>
-    <table id="269" parent="3" name="partition_2">
+    <table id="271" parent="3" name="gulivideo_ori">
       <Temporary>1</Temporary>
     </table>
-    <table id="270" parent="3" name="person_info">
+    <table id="272" parent="3" name="gulivideo_user_orc">
       <Temporary>1</Temporary>
     </table>
-    <table id="271" parent="3" name="ss">
+    <table id="273" parent="3" name="gulivideo_user_ori">
       <Temporary>1</Temporary>
     </table>
-    <table id="272" parent="3" name="t_1">
+    <table id="274" parent="3" name="movie_info">
       <Temporary>1</Temporary>
     </table>
-    <table id="273" parent="3" name="tb">
+    <table id="275" parent="3" name="partition_1">
       <Temporary>1</Temporary>
     </table>
-    <table id="274" parent="3" name="tb4">
+    <table id="276" parent="3" name="partition_2">
+      <Temporary>1</Temporary>
+    </table>
+    <table id="277" parent="3" name="person_info">
+      <Temporary>1</Temporary>
+    </table>
+    <table id="278" parent="3" name="plant_carbon">
+      <Temporary>1</Temporary>
+    </table>
+    <table id="279" parent="3" name="score">
+      <Temporary>1</Temporary>
+    </table>
+    <table id="280" parent="3" name="ss">
+      <Temporary>1</Temporary>
+    </table>
+    <table id="281" parent="3" name="t_1">
+      <Temporary>1</Temporary>
+    </table>
+    <table id="282" parent="3" name="tb">
+      <Temporary>1</Temporary>
+    </table>
+    <table id="283" parent="3" name="tb4">
       <Comment>测试表</Comment>
       <Temporary>1</Temporary>
     </table>
-    <table id="275" parent="3" name="test">
+    <table id="284" parent="3" name="test">
       <RowFormatSerde>org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe</RowFormatSerde>
       <SerdeProperties>collection.delim
 _
@@ -1363,210 +1404,407 @@ mapkey.delim
       <Properties>bucketing_version
 2</Properties>
     </table>
-    <table id="276" parent="3" name="testtable">
+    <table id="285" parent="3" name="testtable">
       <Temporary>1</Temporary>
     </table>
-    <table id="277" parent="3" name="tt">
+    <table id="286" parent="3" name="tt">
       <Temporary>1</Temporary>
     </table>
-    <table id="278" parent="3" name="tt2">
+    <table id="287" parent="3" name="tt2">
       <Temporary>1</Temporary>
     </table>
-    <table id="279" parent="3" name="ttt">
+    <table id="288" parent="3" name="ttt">
       <Temporary>1</Temporary>
     </table>
-    <column id="280" parent="264" name="id">
-      <Position>1</Position>
-      <DataType>int|4s</DataType>
-    </column>
-    <column id="281" parent="265" name="name">
+    <table id="289" parent="3" name="user_low_carbon">
+      <Temporary>1</Temporary>
+    </table>
+    <table id="290" parent="3" name="visit">
+      <Temporary>1</Temporary>
+    </table>
+    <column id="291" parent="264" name="userid">
       <Position>1</Position>
       <DataType>string|12s</DataType>
     </column>
-    <column id="282" parent="265" name="friends">
+    <column id="292" parent="264" name="visitdate">
+      <Position>2</Position>
+      <DataType>string|12s</DataType>
+    </column>
+    <column id="293" parent="264" name="visitcount">
+      <Position>3</Position>
+      <DataType>int|4s</DataType>
+    </column>
+    <column id="294" parent="265" name="id">
+      <Position>1</Position>
+      <DataType>int|4s</DataType>
+    </column>
+    <column id="295" parent="266" name="name">
+      <Position>1</Position>
+      <DataType>string|12s</DataType>
+    </column>
+    <column id="296" parent="266" name="friends">
       <Position>2</Position>
       <DataType>array&lt;string&gt;|2003s</DataType>
     </column>
-    <column id="283" parent="265" name="children">
+    <column id="297" parent="266" name="children">
       <Position>3</Position>
       <DataType>map&lt;string,int&gt;|2000s</DataType>
     </column>
-    <column id="284" parent="265" name="address">
+    <column id="298" parent="266" name="address">
       <Position>4</Position>
       <DataType>struct&lt;street:string,city:string,emaill:int&gt;|2002s</DataType>
     </column>
-    <column id="285" parent="266" name="name">
+    <column id="299" parent="267" name="userid">
       <Position>1</Position>
       <DataType>string|12s</DataType>
     </column>
-    <column id="286" parent="266" name="dept_id">
+    <column id="300" parent="267" name="visitdate">
       <Position>2</Position>
       <DataType>string|12s</DataType>
     </column>
-    <column id="287" parent="266" name="sex">
-      <Position>3</Position>
-      <DataType>string|12s</DataType>
-    </column>
-    <column id="288" parent="267" name="movie">
-      <Position>1</Position>
-      <DataType>string|12s</DataType>
-    </column>
-    <column id="289" parent="267" name="category">
-      <Position>2</Position>
-      <DataType>string|12s</DataType>
-    </column>
-    <column id="290" parent="268" name="id">
-      <Position>1</Position>
-      <DataType>int|4s</DataType>
-    </column>
-    <column id="291" parent="268" name="name">
-      <Position>2</Position>
-      <DataType>string|12s</DataType>
-    </column>
-    <column id="292" parent="268" name="age">
+    <column id="301" parent="267" name="visitcount">
       <Position>3</Position>
       <DataType>int|4s</DataType>
     </column>
-    <column id="293" parent="268" name="day">
+    <column id="302" parent="268" name="name">
+      <Position>1</Position>
+      <DataType>string|12s</DataType>
+    </column>
+    <column id="303" parent="268" name="orderdate">
+      <Position>2</Position>
+      <DataType>string|12s</DataType>
+    </column>
+    <column id="304" parent="268" name="cost">
+      <Position>3</Position>
+      <DataType>int|4s</DataType>
+    </column>
+    <column id="305" parent="269" name="name">
+      <Position>1</Position>
+      <DataType>string|12s</DataType>
+    </column>
+    <column id="306" parent="269" name="dept_id">
+      <Position>2</Position>
+      <DataType>string|12s</DataType>
+    </column>
+    <column id="307" parent="269" name="sex">
+      <Position>3</Position>
+      <DataType>string|12s</DataType>
+    </column>
+    <column id="308" parent="270" name="videoid">
+      <Position>1</Position>
+      <DataType>string|12s</DataType>
+    </column>
+    <column id="309" parent="270" name="uploader">
+      <Position>2</Position>
+      <DataType>string|12s</DataType>
+    </column>
+    <column id="310" parent="270" name="age">
+      <Position>3</Position>
+      <DataType>int|4s</DataType>
+    </column>
+    <column id="311" parent="270" name="category">
+      <Position>4</Position>
+      <DataType>array&lt;string&gt;|2003s</DataType>
+    </column>
+    <column id="312" parent="270" name="length">
+      <Position>5</Position>
+      <DataType>int|4s</DataType>
+    </column>
+    <column id="313" parent="270" name="views">
+      <Position>6</Position>
+      <DataType>int|4s</DataType>
+    </column>
+    <column id="314" parent="270" name="rate">
+      <Position>7</Position>
+      <DataType>float|6s</DataType>
+    </column>
+    <column id="315" parent="270" name="ratings">
+      <Position>8</Position>
+      <DataType>int|4s</DataType>
+    </column>
+    <column id="316" parent="270" name="comments">
+      <Position>9</Position>
+      <DataType>int|4s</DataType>
+    </column>
+    <column id="317" parent="270" name="relatedid">
+      <Position>10</Position>
+      <DataType>array&lt;string&gt;|2003s</DataType>
+    </column>
+    <column id="318" parent="271" name="videoid">
+      <Position>1</Position>
+      <DataType>string|12s</DataType>
+    </column>
+    <column id="319" parent="271" name="uploader">
+      <Position>2</Position>
+      <DataType>string|12s</DataType>
+    </column>
+    <column id="320" parent="271" name="age">
+      <Position>3</Position>
+      <DataType>int|4s</DataType>
+    </column>
+    <column id="321" parent="271" name="category">
+      <Position>4</Position>
+      <DataType>array&lt;string&gt;|2003s</DataType>
+    </column>
+    <column id="322" parent="271" name="length">
+      <Position>5</Position>
+      <DataType>int|4s</DataType>
+    </column>
+    <column id="323" parent="271" name="views">
+      <Position>6</Position>
+      <DataType>int|4s</DataType>
+    </column>
+    <column id="324" parent="271" name="rate">
+      <Position>7</Position>
+      <DataType>float|6s</DataType>
+    </column>
+    <column id="325" parent="271" name="ratings">
+      <Position>8</Position>
+      <DataType>int|4s</DataType>
+    </column>
+    <column id="326" parent="271" name="comments">
+      <Position>9</Position>
+      <DataType>int|4s</DataType>
+    </column>
+    <column id="327" parent="271" name="relatedid">
+      <Position>10</Position>
+      <DataType>array&lt;string&gt;|2003s</DataType>
+    </column>
+    <column id="328" parent="272" name="uploader">
+      <Position>1</Position>
+      <DataType>string|12s</DataType>
+    </column>
+    <column id="329" parent="272" name="videos">
+      <Position>2</Position>
+      <DataType>int|4s</DataType>
+    </column>
+    <column id="330" parent="272" name="friends">
+      <Position>3</Position>
+      <DataType>int|4s</DataType>
+    </column>
+    <column id="331" parent="273" name="uploader">
+      <Position>1</Position>
+      <DataType>string|12s</DataType>
+    </column>
+    <column id="332" parent="273" name="videos">
+      <Position>2</Position>
+      <DataType>int|4s</DataType>
+    </column>
+    <column id="333" parent="273" name="friends">
+      <Position>3</Position>
+      <DataType>int|4s</DataType>
+    </column>
+    <column id="334" parent="274" name="movie">
+      <Position>1</Position>
+      <DataType>string|12s</DataType>
+    </column>
+    <column id="335" parent="274" name="category">
+      <Position>2</Position>
+      <DataType>string|12s</DataType>
+    </column>
+    <column id="336" parent="275" name="id">
+      <Position>1</Position>
+      <DataType>int|4s</DataType>
+    </column>
+    <column id="337" parent="275" name="name">
+      <Position>2</Position>
+      <DataType>string|12s</DataType>
+    </column>
+    <column id="338" parent="275" name="age">
+      <Position>3</Position>
+      <DataType>int|4s</DataType>
+    </column>
+    <column id="339" parent="275" name="day">
       <Position>4</Position>
       <DataType>string|12s</DataType>
     </column>
-    <column id="294" parent="269" name="id">
+    <column id="340" parent="276" name="id">
       <Position>1</Position>
       <DataType>int|4s</DataType>
     </column>
-    <column id="295" parent="269" name="name">
+    <column id="341" parent="276" name="name">
       <Position>2</Position>
       <DataType>string|12s</DataType>
     </column>
-    <column id="296" parent="269" name="age">
+    <column id="342" parent="276" name="age">
       <Position>3</Position>
       <DataType>int|4s</DataType>
     </column>
-    <column id="297" parent="269" name="day">
+    <column id="343" parent="276" name="day">
       <Position>4</Position>
       <DataType>string|12s</DataType>
     </column>
-    <column id="298" parent="269" name="hour">
+    <column id="344" parent="276" name="hour">
       <Position>5</Position>
       <DataType>string|12s</DataType>
     </column>
-    <column id="299" parent="270" name="name">
+    <column id="345" parent="277" name="name">
       <Position>1</Position>
       <DataType>string|12s</DataType>
     </column>
-    <column id="300" parent="270" name="constellation">
+    <column id="346" parent="277" name="constellation">
       <Position>2</Position>
       <DataType>string|12s</DataType>
     </column>
-    <column id="301" parent="270" name="blood_type">
+    <column id="347" parent="277" name="blood_type">
       <Position>3</Position>
       <DataType>string|12s</DataType>
     </column>
-    <column id="302" parent="271" name="id">
+    <column id="348" parent="278" name="plant_id">
+      <Position>1</Position>
+      <DataType>string|12s</DataType>
+    </column>
+    <column id="349" parent="278" name="plant_name">
+      <Position>2</Position>
+      <DataType>string|12s</DataType>
+    </column>
+    <column id="350" parent="278" name="low_carbon">
+      <Position>3</Position>
+      <DataType>int|4s</DataType>
+    </column>
+    <column id="351" parent="279" name="name">
+      <Position>1</Position>
+      <DataType>string|12s</DataType>
+    </column>
+    <column id="352" parent="279" name="subject">
+      <Position>2</Position>
+      <DataType>string|12s</DataType>
+    </column>
+    <column id="353" parent="279" name="score">
+      <Position>3</Position>
+      <DataType>int|4s</DataType>
+    </column>
+    <column id="354" parent="280" name="id">
       <Position>1</Position>
       <DataType>int|4s</DataType>
     </column>
-    <column id="303" parent="271" name="name">
+    <column id="355" parent="280" name="name">
       <Position>2</Position>
       <DataType>string|12s</DataType>
     </column>
-    <column id="304" parent="271" name="age">
+    <column id="356" parent="280" name="age">
       <Position>3</Position>
       <DataType>int|4s</DataType>
     </column>
-    <column id="305" parent="272" name="id">
+    <column id="357" parent="281" name="id">
       <Position>1</Position>
       <DataType>int|4s</DataType>
     </column>
-    <column id="306" parent="272" name="name">
+    <column id="358" parent="281" name="name">
       <Position>2</Position>
       <DataType>string|12s</DataType>
     </column>
-    <column id="307" parent="272" name="age">
+    <column id="359" parent="281" name="age">
       <Position>3</Position>
       <DataType>int|4s</DataType>
     </column>
-    <column id="308" parent="273" name="id">
+    <column id="360" parent="282" name="id">
       <Position>1</Position>
       <DataType>int|4s</DataType>
     </column>
-    <column id="309" parent="273" name="name">
+    <column id="361" parent="282" name="name">
       <Position>2</Position>
       <DataType>string|12s</DataType>
     </column>
-    <column id="310" parent="273" name="age">
+    <column id="362" parent="282" name="age">
       <Position>3</Position>
       <DataType>int|4s</DataType>
     </column>
-    <column id="311" parent="274" name="id">
+    <column id="363" parent="283" name="id">
       <Position>1</Position>
       <Comment>表的主键2</Comment>
       <DataType>int|4s</DataType>
     </column>
-    <column id="312" parent="275" name="name">
+    <column id="364" parent="284" name="name">
       <Position>1</Position>
       <DataType>string|12s</DataType>
     </column>
-    <column id="313" parent="275" name="friends">
+    <column id="365" parent="284" name="friends">
       <Position>2</Position>
       <DataType>array&lt;string&gt;|2003s</DataType>
     </column>
-    <column id="314" parent="275" name="children">
+    <column id="366" parent="284" name="children">
       <Position>3</Position>
       <DataType>map&lt;string,int&gt;|2000s</DataType>
     </column>
-    <column id="315" parent="275" name="address">
+    <column id="367" parent="284" name="address">
       <Position>4</Position>
       <DataType>struct&lt;street:string,city:string,emaill:int&gt;|2002s</DataType>
     </column>
-    <column id="316" parent="276" name="id">
+    <column id="368" parent="285" name="id">
       <Position>1</Position>
       <DataType>bigint|-5s</DataType>
     </column>
-    <column id="317" parent="276" name="name">
+    <column id="369" parent="285" name="name">
       <Position>2</Position>
       <DataType>string|12s</DataType>
     </column>
-    <column id="318" parent="276" name="age">
+    <column id="370" parent="285" name="age">
       <Position>3</Position>
       <DataType>int|4s</DataType>
     </column>
-    <column id="319" parent="277" name="id">
+    <column id="371" parent="286" name="id">
       <Position>1</Position>
       <DataType>bigint|-5s</DataType>
     </column>
-    <column id="320" parent="277" name="name">
+    <column id="372" parent="286" name="name">
       <Position>2</Position>
       <DataType>string|12s</DataType>
     </column>
-    <column id="321" parent="277" name="age">
+    <column id="373" parent="286" name="age">
       <Position>3</Position>
       <DataType>int|4s</DataType>
     </column>
-    <column id="322" parent="278" name="id">
+    <column id="374" parent="287" name="id">
       <Position>1</Position>
       <DataType>bigint|-5s</DataType>
     </column>
-    <column id="323" parent="278" name="name">
+    <column id="375" parent="287" name="name">
       <Position>2</Position>
       <DataType>string|12s</DataType>
     </column>
-    <column id="324" parent="278" name="age">
+    <column id="376" parent="287" name="age">
       <Position>3</Position>
       <DataType>int|4s</DataType>
     </column>
-    <column id="325" parent="279" name="id">
+    <column id="377" parent="288" name="id">
       <Position>1</Position>
       <DataType>int|4s</DataType>
     </column>
-    <column id="326" parent="279" name="name">
+    <column id="378" parent="288" name="name">
       <Position>2</Position>
       <DataType>string|12s</DataType>
     </column>
-    <column id="327" parent="279" name="age">
+    <column id="379" parent="288" name="age">
       <Position>3</Position>
       <DataType>int|4s</DataType>
+    </column>
+    <column id="380" parent="289" name="user_id">
+      <Position>1</Position>
+      <DataType>string|12s</DataType>
+    </column>
+    <column id="381" parent="289" name="data_dt">
+      <Position>2</Position>
+      <DataType>string|12s</DataType>
+    </column>
+    <column id="382" parent="289" name="low_carbon">
+      <Position>3</Position>
+      <DataType>int|4s</DataType>
+    </column>
+    <column id="383" parent="290" name="shop">
+      <Position>1</Position>
+      <Comment>店铺名称</Comment>
+      <DataType>string|12s</DataType>
+    </column>
+    <column id="384" parent="290" name="user_id">
+      <Position>2</Position>
+      <Comment>用户id</Comment>
+      <DataType>string|12s</DataType>
+    </column>
+    <column id="385" parent="290" name="visit_time">
+      <Position>3</Position>
+      <Comment>访问时间</Comment>
+      <DataType>string|12s</DataType>
     </column>
   </database-model>
 </dataSource>
