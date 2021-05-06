@@ -1,0 +1,10 @@
+# flume agent的内部原理
+1.source读取数据源
+2.channel processor处理事件
+3.将事件传递给拦截器链(interceptor),执行拦截器完毕后返回channel processor
+4.将事件交给channel selector,channel selector有两种Replicating（复制,将数据给所有的channel各发一份,默认为复制）和Multiplexing（多路复用,根据不同的条件将数据发往不同的channel）,结束后返回channel processor
+5.根据channel processor选择的结果发往对应的channel
+6.SinkProcessor,有三种类型，分别是DefaultSinkProcessor、LoadBalancingSinkProcessor和FailoverSinkProcessor
+DefaultSinkProcessor:每个channel单独对应一个sink
+LoadBalancingSinkProcessor:可以实现负载均衡(基本不用)
+FailoverSinkProcessor:可以实现故障转移(基本不用)
