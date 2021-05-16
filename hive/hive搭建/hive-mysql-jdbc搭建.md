@@ -33,7 +33,7 @@ sudo rm -rf *(此处注意当前的目录位置,不要误杀)
 sudo mysqld --initialize --user=mysql
 
 5.查看临时密码
-cat /var/log/mysql.log
+cat /var/log/mysqld.log
 
 6.启动mysql服务
 systemctl start mysqld
@@ -56,46 +56,64 @@ vim hive-site.xml
 <?xml version="1.0"?>
 <?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
 <configuration>
-    <!-- jdbc连接的URL -->
     <property>
         <name>javax.jdo.option.ConnectionURL</name>
         <value>jdbc:mysql://hadoop102:3306/metastore?useSSL=false</value>
-</property>
+    </property>
 
-    <!-- jdbc连接的Driver-->
     <property>
         <name>javax.jdo.option.ConnectionDriverName</name>
         <value>com.mysql.jdbc.Driver</value>
-</property>
+    </property>
 
-    <!-- jdbc连接的username-->
     <property>
         <name>javax.jdo.option.ConnectionUserName</name>
         <value>root</value>
     </property>
 
-    <!-- jdbc连接的password -->
     <property>
         <name>javax.jdo.option.ConnectionPassword</name>
-        <value>123456</value>
-</property>
+        <value>000000</value>
+    </property>
 
-    <!-- Hive元数据存储版本的验证 -->
+    <property>
+        <name>hive.metastore.warehouse.dir</name>
+        <value>/user/hive/warehouse</value>
+    </property>
+
     <property>
         <name>hive.metastore.schema.verification</name>
         <value>false</value>
-</property>
+    </property>
 
-    <!--元数据存储授权-->
+    <property>
+    <name>hive.server2.thrift.port</name>
+    <value>10000</value>
+    </property>
+
+    <property>
+        <name>hive.server2.thrift.bind.host</name>
+        <value>hadoop102</value>
+    </property>
+
     <property>
         <name>hive.metastore.event.db.notification.api.auth</name>
         <value>false</value>
     </property>
-
-    <!-- Hive默认在HDFS的工作目录 -->
+    
     <property>
-        <name>hive.metastore.warehouse.dir</name>
-        <value>/user/hive/warehouse</value>
+        <name>hive.cli.print.header</name>
+        <value>true</value>
+    </property>
+
+    <property>
+        <name>hive.cli.print.current.db</name>
+        <value>true</value>
+    </property>
+    <!-- hiveserver2的高可用参数，开启此参数可以提高hiveserver2的启动速度 -->
+    <property>
+        <name>hive.server2.active.passive.ha.enable</name>
+        <value>true</value>
     </property>
 </configuration>
 ```
@@ -106,28 +124,7 @@ vim hive-site.xml
 schematool -dbType -initSchema mysql -verbose
 
 ## 4.jdbc连接hive
-1.添加配置文件
-```xml
-<!-- 指定hiveserver2连接的host -->
-    <property>
-        <name>hive.server2.thrift.bind.host</name>
-        <value>hadoop101</value>
-    </property>
-
-    <!-- 指定hiveserver2连接的端口号 -->
-    <property>
-        <name>hive.server2.thrift.port</name>
-        <value>10000</value>
-    </property>
-    <!-- hiveserver2的高可用参数，开启此参数可以提高hiveserver2的启动速度 -->
-    <property>
-        <name>hive.server2.active.passive.ha.enable</name>
-        <value>true</value>
-    </property>
-
-```
-
-2.自带脚本启动hiveserver2服务
+1.自带脚本启动hiveserver2服务
 hiveserver2
-3.启动beeline客户端
+2.启动beeline客户端
 bin/beeline -u jdbc:hive2://hadoop101:10000 -n zt

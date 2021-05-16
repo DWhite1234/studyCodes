@@ -35,10 +35,10 @@
 	1.scp复制资源(不常用)
 
 		拉取资源  主机@用户:资源路径                 目标路径
-		scp -r hadoop101@zt:/opt/module/jdk...  /opt/module/
+		scp -r zt@hadoop101:/opt/module/jdk...  /opt/module/
 
-		发送资源  目标路径       主机@用户:资源路径
-		scp -r /opt/module/  hadoop101@zt:/opt/module/jdk...	
+		发送资源  目标路径       用户@主机:资源路径
+		scp -r /opt/module/  zt@hadoop101:/opt/module/jdk...	
 	2.rsync(需要安装),差异文件复制,一般编写群发脚本
 
 		rsync -av  资源路径 目标路径

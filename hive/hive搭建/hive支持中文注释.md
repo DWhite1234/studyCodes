@@ -1,6 +1,6 @@
 
 ##创建hive元数据库hive，并指定utf-8编码格式
-mysql>create database hive DEFAULT CHARSET utf8 COLLATE utf8_general_ci;
+mysql>create database metastore DEFAULT CHARSET utf8 COLLATE utf8_general_ci;
  
  
 ##修改已存在的hive元数据库，字符编码格式为utf-8

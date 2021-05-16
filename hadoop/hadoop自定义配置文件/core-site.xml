@@ -4,7 +4,7 @@
 	<!-- 指定NameNode的地址以及集群的文件系统 -->
 	<property>
 		<name>fs.defaultFS</name>
-		<value>hdfs://hadoop101:8020</value>
+		<value>hdfs://hadoop104:8020</value>
 	</property>
 	<!-- 指定hadoop数据的存储目录 -->
 	<property>
@@ -18,17 +18,17 @@
 	</property>
 	<!-- 配置该atguigu(superUser)允许通过代理访问的主机节点 -->
 	<property>
-		<name>hadoop.proxyuser.atguigu.hosts</name>
+		<name>hadoop.proxyuser.zt.hosts</name>
 		<value>*</value>
 	</property>
 	<!-- 配置该atguigu(superUser)允许通过代理用户所属组 -->
 	<property>
-		<name>hadoop.proxyuser.atguigu.groups</name>
+		<name>hadoop.proxyuser.zt.groups</name>
 		<value>*</value>
 	</property>
 	<!-- 配置该atguigu(superUser)允许通过代理的用户-->
 	<property>
-		<name>hadoop.proxyuser.atguigu.users</name>
+		<name>hadoop.proxyuser.zt.users</name>
 		<value>*</value>
 	</property>
 </configuration>

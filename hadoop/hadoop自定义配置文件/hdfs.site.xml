@@ -6,12 +6,12 @@
     <!-- nn web端访问地址-->
     <property>
         <name>dfs.namenode.http-address</name>
-        <value>hadoop101:9870</value>
+        <value>hadoop104:9870</value>
     </property>
     <!-- 2nn web端访问地址-->
     <property>
         <name>dfs.namenode.secondary.http-address</name>
-        <value>hadoop103:9868</value>
+        <value>hadoop106:9868</value>
     </property>
     <!-- 白名单 -->
     <property>
