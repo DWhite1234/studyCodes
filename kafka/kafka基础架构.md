@@ -1,0 +1,22 @@
+# kafka
+borker:一个broker就代表一个kafka一个节点,一台服务器上只会存在一个broker
+
+topic:一个主题包含多个partiotion,这些partiotion分布在不同的节点上.主题的数据根据一定的规则分布在这些partiotion中,所有partiotion组合起来才是一份完整的数据,而不是每个partiotion包含所有数据
+
+partiotion:分区是kafka实现分布式的核心
+
+副本:副本是对分区的备份,并且在这些分区的备份中,才会产生leader与follow的关系
+
+leader与follower:这种关系只发生在副本中,每个分区都有多个副本,且分布在不同的节点上.只有leader接受来自生产者的数据,follow只会去leader上拷贝数据
+
+
+消息:生产者向topic发送消息时,不是以partition为主题,而是以一条消息的形式向patition中写入,而消费消息时,也是一条消息一条消息的消费
+
+
+消费者组:消费者组是由多个消费者组成的,整个消费者组组成一份数据,消费者与分区类似
+
+消费者:多个分区可以被同一个消费者消费,但是同一个分区不能被多个消费者消费
+
+zookeeper:只保存kafka和消费者的信息,不保存生产者的信息
+
+offset:0.9版本之前,存储在zookeeper中,之后存在kafka本地.offset记录消息的消费情况,每个消费者的offset都不一样
