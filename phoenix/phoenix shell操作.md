@@ -1,5 +1,5 @@
 # phoenix shell操作
-##1.视图映射
+## 1.视图映射
 <!-- 创建视图 -->
 create view "test"(id varchar primary key,"info1"."name" varchar, "info2"."address" varchar);
 <!-- 删除视图 -->
@@ -8,7 +8,7 @@ drop view "test";
 
 注意点:
     视图是只读的,只能用来查询,无法对源数据进行修改
-##2.表映射
+## 2.表映射
 <!-- 创建映射表 -->
 create table "test"(id varchar primary key,"info1"."name" varchar, "info2"."address" varchar) column_encoded_bytes=0;
 
