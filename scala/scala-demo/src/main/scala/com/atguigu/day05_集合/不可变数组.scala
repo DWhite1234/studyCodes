@@ -46,5 +46,6 @@ object 不可变数组 {
     val ints2 = 1 +: ints
     println(ints1.mkString("ints(", ",", ")"),"length:"+ints1.length)
     println(ints2.mkString("ints(", ",", ")"),"length:"+ints1.length)
+    println(ints.mkString("ints(", ",", ")"),"length:"+ints.length)
   }
 }
