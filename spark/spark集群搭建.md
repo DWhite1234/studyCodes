@@ -98,6 +98,8 @@ bin/spark-submit \
  ./examples/jars/spark-examples_2.12-3.0.0.jar \
  10
 
+ 注意:日志服务器需要单独启动:sbin/start-historyserver.sh
+
 
     
 

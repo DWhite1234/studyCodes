@@ -1,6 +1,0 @@
-cmd 
-diskpart
-list disk
-select disk X
-clean
-格式化

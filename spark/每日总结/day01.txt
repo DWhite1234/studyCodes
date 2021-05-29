@@ -1,0 +1,56 @@
+﻿1.Spark负责什么事，设计自己调度器的原因?
+负责:负责计算,
+
+原因:hadoop 2013.10发布2.x版本分离除yarn,spark 2013年6成为apache的孵化项目,
+比hadoop2.x出现的晚,此时还没有yarn所有就自己实现了一套资源调度系统
+
+2.Spark为什么比Hadoop快?
+1.spark是基于内存的
+2.天生支持迭代式计算
+
+3.如何提交一个Spark任务？主要参数有哪些？
+1.bin/spark-submit
+
+--class
+--master
+--depoly-mode
+--executor-memory
+--total-executor-cores
+jar
+jar运行参数
+
+2.spark-shell
+sc....collect
+
+4.spark-standalone模式配置了哪些文件?
+spark-default.conf
+spark-env.sh
+slaves
+
+5.spark-yarn模式配置了哪些文件?
+spark-default.conf(日志服务)
+spark-env.sh
+
+
+6.画出在Yarn-Client模式下提交任务的流程图。
+
+7.画出在Yarn-Cluster模式下提交任务的流程图。
+
+8.简述你所理解的spark不同运行模式之间的区别，开发时怎么选择
+本地模式:
+    1,单机运行,用来测试
+standalone模式:
+    1.需要多个节点
+    2.拥有自己的资源调度框架,不依赖hadoop,但是大数据环境必须以hadoop为基础,同时yarn提供了资源调度框架,所以该模式基本不用
+yarn:
+    1.单节点
+    2.将任务提交到yarn,让yarn分配资源,自己只进行计算任务
+    3.开发常用     
+9.spark端口号总结
+    8080    master端口(因为与别的端口有冲突,需要自己重新定义)
+    4040    spark-shell任务运行的查看端口
+    7070    内部通信端口
+    18080   日志服务器
+
+
+
