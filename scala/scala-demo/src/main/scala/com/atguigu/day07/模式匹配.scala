@@ -52,6 +52,28 @@ object 模式匹配 {
       case (0, y) => "匹配0开头的的元组"
     }
 
+    //偏函数
+    val list = List(1,2,3,4,5,6,"test")
+
+    list.map(i=>i match {
+      case i:Int=> i+1
+      case i:String => i
+    })
+
+    list.map {
+      case i: Int => i + 1
+      case i: String => i
+    }
+
+    list.collect({
+      case i: Int => i + 1
+      case i: String => i
+    }).foreach(print)
+
+
+
+
+
     println(testTypeMatch((2, 1)))
   }
 }
