@@ -4,100 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5711e5a-f948-4ff8-b55c-dbeeedaf8dc2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/data/agent.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/atguigu/action/action01_reduce.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/atguigu/action/action02_collect.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/atguigu/action/action03_count.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/atguigu/action/action04_first.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/atguigu/action/action05_take.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/atguigu/action/action06_takeOrdered.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/atguigu/action/action07_aggregate.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/atguigu/action/action08_fold.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/atguigu/action/action09_countByKey.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/atguigu/action/action09_foreach.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/atguigu/action/action09_save.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/atguigu/dependency/Lineage01.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/atguigu/dependency/Lineage02.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/atguigu/dependency/Lineage03.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/atguigu/dependency/stage.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/atguigu/keyValue/KeyValue07_sortByKey.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/atguigu/keyValue/KeyValue08_mapValues.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/atguigu/keyValue/KeyValue09_join.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/atguigu/keyValue/KeyValue10_cogroup.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/atguigu/serializable/MySerializable.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/atguigu/serializable/test.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/atguigu/top3/Top3.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/atguigu/keyValue/KeyValue01_partitionBy.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/atguigu/keyValue/KeyValue01_partitionBy.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/atguigu/keyValue/KeyValue04_aggregateByKey.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/atguigu/keyValue/KeyValue04_aggregateByKey.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/atguigu/keyValue/KeyValue06_combineByKey.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/atguigu/keyValue/KeyValue06_combineByKey.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SparkCoreTest.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes.654316850.timestamp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/createRDD/CreateByFile$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/createRDD/CreateByFile.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/createRDD/CreateByList$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/createRDD/CreateByList.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/doubleValue/DoubleValue01_intersection$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/doubleValue/DoubleValue01_intersection.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/doubleValue/DoubleValue02_union$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/doubleValue/DoubleValue02_union.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/doubleValue/DoubleValue03_subtract$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/doubleValue/DoubleValue03_subtract.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/doubleValue/DoubleValue04_zip$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/doubleValue/DoubleValue04_zip.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/keyValue/KeyValue01_partitionBy$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/keyValue/KeyValue01_partitionBy.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/keyValue/KeyValue02_reduceByKey$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/keyValue/KeyValue02_reduceByKey.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/keyValue/KeyValue03_groupByKey$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/keyValue/KeyValue03_groupByKey.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/keyValue/KeyValue04_aggregateByKey$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/keyValue/KeyValue04_aggregateByKey.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/keyValue/KeyValue05_foldByKey$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/keyValue/KeyValue05_foldByKey.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/keyValue/KeyValue06_combineByKey$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/keyValue/KeyValue06_combineByKey.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/keyValue/MyPartitioner.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/source/SourceByFile$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/source/SourceByFile.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/source/SourceByList$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/source/SourceByList.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/value/value01_map$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/value/value01_map.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/value/value02_mapPartitions$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/value/value02_mapPartitions.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/value/value03_mapPartitionsWithIndex$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/value/value03_mapPartitionsWithIndex.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/value/value04_flatMap$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/value/value04_flatMap.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/value/value05_glom$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/value/value05_glom.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/value/value06_groupby$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/value/value06_groupby.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/value/value08_filter$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/value/value08_filter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/value/value09_sample$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/value/value09_sample.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/value/value10_distinct$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/value/value10_distinct.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/value/value11_coalesce$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/value/value11_coalesce.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/value/value12_repartition$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/value/value12_repartition.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/value/value13_pipe$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/value/value13_pipe.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/value/value13_sortBy$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/value/value13_sortBy.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/wc/WordCount$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/wc/WordCount.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/log4j.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/spark-demo-1.0-SNAPSHOT.jar" beforeDir="false" />
-    </list>
+    <list default="true" id="e5711e5a-f948-4ff8-b55c-dbeeedaf8dc2" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -170,7 +77,20 @@
       <recent name="com.atguigu.value" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.test">
+  <component name="RunManager" selected="Application.KeyValue01_partitionBy">
+    <configuration name="KeyValue01_partitionBy" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.keyValue.KeyValue01_partitionBy" />
+      <module name="spark-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.atguigu.keyValue.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Lineage01" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.atguigu.dependency.Lineage01" />
       <module name="spark-demo" />
@@ -190,19 +110,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.atguigu.dependency.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MySerializable" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.atguigu.serializable.MySerializable" />
-      <module name="spark-demo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.atguigu.serializable.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -249,11 +156,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.KeyValue01_partitionBy" />
         <item itemvalue="Application.test" />
         <item itemvalue="Application.stage" />
         <item itemvalue="Application.Lineage02" />
         <item itemvalue="Application.Lineage01" />
-        <item itemvalue="Application.MySerializable" />
       </list>
     </recent_temporary>
   </component>
@@ -281,7 +188,7 @@
       <workItem from="1622460340519" duration="5031000" />
       <workItem from="1622466916251" duration="9000" />
       <workItem from="1622507288041" duration="9174000" />
-      <workItem from="1622536331774" duration="12669000" />
+      <workItem from="1622536331774" duration="13139000" />
     </task>
     <servers />
   </component>
