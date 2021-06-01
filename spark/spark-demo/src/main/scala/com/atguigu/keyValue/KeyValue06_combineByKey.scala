@@ -36,6 +36,11 @@ object KeyValue06_combineByKey {
       foldByKey:有初始值,分区内和分区间逻辑一致
       combineByKey:有初始值,并且初始值还可以更改数据结构,更加灵活
      */
+
+    //wordcount
+    val value: RDD[String] = sc.textFile("E:\\studyCodes\\spark\\spark-demo\\data\\1.txt")
+    value.flatMap(i => i.split(" ")).map(i =>(i,1)).combineByKey(i=>i,(a:Int,b:Int)=>a+b,(a:Int,b:Int)=>a+b).collect().foreach(println)
+
     sc.stop()
   }
 }

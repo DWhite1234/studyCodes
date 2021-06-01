@@ -17,6 +17,9 @@ object KeyValue04_aggregateByKey {
     //需求:取出每个分区,相同key的最大值,最后相加
     rdd.aggregateByKey(0)((a, b) => math.max(a, b), ((x,y) => x+y)).collect().foreach(println)
 
+    //wordcount
+    val value: RDD[String] = sc.textFile("E:\\studyCodes\\spark\\spark-demo\\data\\1.txt")
+    value.flatMap(i => i.split(" ")).map(i => (i, 1)).aggregateByKey(0)((a,b)=>a+b,(x,y)=>x+y).collect().foreach(println)
     sc.stop()
   }
 }

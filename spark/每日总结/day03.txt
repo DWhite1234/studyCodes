@@ -1,0 +1,59 @@
+1.写出8个以上的value类型的转换算子,并简单解释算子的功能
+map
+flatMap
+mapPartition
+mapPartitionWidthIndex
+glom(分区数据拆分为数组)
+groupBy
+filter
+sample
+distinct
+coalesce  repartition (重新分区)
+sortBy(排序)
+
+
+2.写出spark的zip算子和scala集合的zip函数的区别
+scala:zip如果拉不上的数据会被删除
+spark:如果数据不匹配或者分区不匹配则会直接报错
+
+3.spark自定义分区器partitioner的步骤
+    1.extends Partitioner
+    2.构造注入分区属性
+    3.重写getPartition,numPartitions
+    4.重写equals方法(比较分区方法是否重复)
+4.reduceByKey跟groupByKey之间的区别。
+不同:
+    reduceByKey:有预聚合,
+    groupByKey:没有预聚合
+相同:
+    都有shuffle
+        
+5.groupByKey和groupBy的区别。
+不同:
+   groupByKey:根据key分组
+   groupBy:根据指定条件分组
+相同:
+    1.都走shuffle
+    2.没有初始值
+6.reduceByKey、foldByKey、aggregateByKey、combineByKey的区别和联系?
+不同:
+    reduceByKey:没有初始值
+    foldByKey:有初始值,分区内和分区间逻辑相同
+    aggregateByKey:有初始值,分区内,分区间逻辑不同
+    combineByKey:有初始值,可以更改数据结构
+相同:底层都是调用的同一个方法   
+
+7.说下combineByKey的三个参数的作用，以及说明其参数调用时机。
+第一个参数:指定初始值的数据结构,在每个分区内,遇到每种key都且执行一次
+第二个参数:分区内逻辑
+第三个参数:分区间逻辑
+-----------------------------机考--------------------------------
+8.读取文件，利用groupByKey或groupBy算子实现WordCount功能。
+
+9.读取文件，利用foldByKey或aggregateByKey算子实现WordCount功能。
+val value: RDD[String] = sc.textFile("E:\\studyCodes\\spark\\spark-demo\\data\\1.txt")
+value.flatMap(i => i.split(" ")).map(i => (i, 1)).aggregateByKey(0)((a,b)=>a+b,(x,y)=>x+y).collect().foreach(println)
+
+10.读取文件，利用combineByKey算子实现WordCount功能。
+val value: RDD[String] = sc.textFile("E:\\studyCodes\\spark\\spark-demo\\data\\1.txt")
+value.flatMap(i => i.split(" ")).map(i =>(i,1)).combineByKey(i=>i,(a:Int,b:Int)=>a+b,(a:Int,b:Int)=>a+b).collect().foreach(println)
