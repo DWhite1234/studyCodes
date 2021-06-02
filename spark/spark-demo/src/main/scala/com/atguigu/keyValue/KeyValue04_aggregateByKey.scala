@@ -20,6 +20,8 @@ object KeyValue04_aggregateByKey {
     //wordcount
     val value: RDD[String] = sc.textFile("E:\\studyCodes\\spark\\spark-demo\\data\\1.txt")
     value.flatMap(i => i.split(" ")).map(i => (i, 1)).aggregateByKey(0)((a,b)=>a+b,(x,y)=>x+y).collect().foreach(println)
+
+    Thread.sleep(Long.MaxValue)
     sc.stop()
   }
 }

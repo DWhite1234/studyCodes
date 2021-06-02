@@ -10,7 +10,9 @@ object KeyValue08_mapValues {
 
     val rdd: RDD[(Int, String)] = sc.makeRDD(Array((1, "a"), (1, "d"), (2, "b"), (3, "c")))
 
+    //不走shuffle
     rdd.mapValues(i=>i+"||||").collect().foreach(println)
+    Thread.sleep(Long.MaxValue)
     sc.stop()
   }
 }

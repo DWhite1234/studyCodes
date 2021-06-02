@@ -38,6 +38,7 @@ object value09_sample {
      */
     val value1: RDD[Int] = rdd.sample(true, 1)
     value1.collect().foreach(println)
+    Thread.sleep(Long.MaxValue)
     sc.stop()
   }
 }

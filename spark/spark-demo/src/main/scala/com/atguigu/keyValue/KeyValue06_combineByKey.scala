@@ -40,7 +40,7 @@ object KeyValue06_combineByKey {
     //wordcount
     val value: RDD[String] = sc.textFile("E:\\studyCodes\\spark\\spark-demo\\data\\1.txt")
     value.flatMap(i => i.split(" ")).map(i =>(i,1)).combineByKey(i=>i,(a:Int,b:Int)=>a+b,(a:Int,b:Int)=>a+b).collect().foreach(println)
-
+    Thread.sleep(Long.MaxValue)
     sc.stop()
   }
 }

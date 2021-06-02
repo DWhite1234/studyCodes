@@ -15,6 +15,7 @@ object value04_flatMap {
 
      */
     value.collect().foreach(println)
+    Thread.sleep(Long.MaxValue)
     sc.stop()
   }
 }

@@ -18,6 +18,7 @@ object value03_mapPartitionsWithIndex {
      */
     val value: RDD[(Int, Int)] = rdd.mapPartitionsWithIndex((a, b) => b.map(i => (a, i)))
     value.collect().foreach(println)
+    Thread.sleep(Long.MaxValue)
     sc.stop()
   }
 }

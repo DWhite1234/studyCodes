@@ -25,6 +25,8 @@ object KeyValue10_cogroup {
         (4,(CompactBuffer(),CompactBuffer(6)))
      */
     rdd.cogroup(rdd1).collect().foreach(println)
+
+    Thread.sleep(Long.MaxValue)
     sc.stop()
   }
 }

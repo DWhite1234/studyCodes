@@ -11,6 +11,8 @@ object KeyValue01_partitionBy {
     val rdd: RDD[(Any, String)] = sc.makeRDD(Array((1, "aaa"), (2, "bbb"), (3, "ccc"), (4, "ddd"),("5","eeee")), 3)
     //重新分区,可以扩大也可以缩小
     rdd.partitionBy(new MyPartitioner(3)).mapPartitionsWithIndex((a, b) => b.map(i => (a, i))).collect().foreach(print)
+
+    Thread.sleep(Long.MaxValue)
     sc.stop()
   }
 }

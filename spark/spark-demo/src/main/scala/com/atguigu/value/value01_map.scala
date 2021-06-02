@@ -13,7 +13,7 @@ object value01_map {
     //例如 a => (a,1)   (a,1)=>a
     val value: RDD[(Int, Int)] = rdd.map((_, 1))
     value.collect().foreach(println)
-
+    Thread.sleep(Long.MaxValue)
     sc.stop()
   }
 }

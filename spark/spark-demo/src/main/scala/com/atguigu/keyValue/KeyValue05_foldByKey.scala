@@ -12,7 +12,7 @@ object KeyValue05_foldByKey {
 
     //foldByKey 是区内与区间逻辑相同的aggregateByKey
     rdd.foldByKey(0)(math.max(_,_)).collect().foreach(println)
-
+    Thread.sleep(Long.MaxValue)
     sc.stop()
   }
 }

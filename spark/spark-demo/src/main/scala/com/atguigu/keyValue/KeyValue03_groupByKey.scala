@@ -17,6 +17,8 @@ object KeyValue03_groupByKey {
     2）groupByKey：按照key进行分组，直接进行shuffle。
     3）开发指导：在不影响业务逻辑的前提下，优先选用reduceByKey。求和操作不影响业务逻辑，求平均值影响业务逻辑
      */
+    Thread.sleep(Long.MaxValue)
+
     sc.stop()
   }
 }

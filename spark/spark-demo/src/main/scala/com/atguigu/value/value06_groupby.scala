@@ -15,7 +15,7 @@ object value06_groupby {
 
      */
     value.collect().foreach(println)
-
+    Thread.sleep(Long.MaxValue)
     sc.stop()
   }
 }

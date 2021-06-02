@@ -10,12 +10,14 @@ object value11_coalesce {
 
     val rdd: RDD[Int] = sc.makeRDD(Array(1, 2, 3, 4, 5, 6, 7), 4)
 
-    //合并分区
+    //合并分区,不走shuffle
     val value: RDD[Int] = rdd.coalesce(2)
     value.mapPartitionsWithIndex((a, b) => b.map(i => (a, i))).collect().foreach(print)
+    Thread.sleep(Long.MaxValue)
     println()
     //扩大分区,需要设置shuffle:true
     rdd.coalesce(6, true).mapPartitionsWithIndex((a, b) => b.map(i => (a, i))).collect().foreach(print)
+
     sc.stop()
   }
 }

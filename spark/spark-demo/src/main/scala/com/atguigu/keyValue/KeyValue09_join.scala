@@ -16,6 +16,8 @@ object KeyValue09_join {
 
     //只能join  key相同的
     rdd.join(rdd1).collect().foreach(println)
+
+    Thread.sleep(Long.MaxValue)
     sc.stop()
   }
 }

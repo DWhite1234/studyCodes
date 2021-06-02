@@ -24,6 +24,7 @@ object value12_repartition {
 
 
      */
+    Thread.sleep(Long.MaxValue)
     sc.stop()
   }
 }

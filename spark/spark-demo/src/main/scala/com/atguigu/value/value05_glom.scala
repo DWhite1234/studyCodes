@@ -14,6 +14,7 @@ object value05_glom {
     将分区拆分为数组返回
      */
     value.collect().foreach(i=> println(i.toList))
+    Thread.sleep(Long.MaxValue)
     sc.stop()
   }
 }

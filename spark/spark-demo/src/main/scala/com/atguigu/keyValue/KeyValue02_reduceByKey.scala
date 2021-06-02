@@ -12,6 +12,7 @@ object KeyValue02_reduceByKey {
     //reduceByKey 有combine 进行分区内预聚合 最后进行分区间聚合
     rdd.reduceByKey((a,b)=>a+b).collect().foreach(println)
 
+    Thread.sleep(Long.MaxValue)
     sc.stop()
   }
 }

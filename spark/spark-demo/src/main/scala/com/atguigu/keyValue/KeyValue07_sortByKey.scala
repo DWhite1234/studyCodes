@@ -19,6 +19,8 @@ object KeyValue07_sortByKey {
     val value: RDD[(Person, Int)] = sc.makeRDD(Array((new Person(18), 1), (new Person(20), 2), (new Person(16), 3)))
 
     value.sortByKey().collect().foreach(println)
+    Thread.sleep(Long.MaxValue)
+
     sc.stop()
   }
 }

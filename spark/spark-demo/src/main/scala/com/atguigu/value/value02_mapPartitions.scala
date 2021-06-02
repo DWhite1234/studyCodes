@@ -14,6 +14,7 @@ object value02_mapPartitions {
     //缺点:一次导入分区所有数据,内存释放不及时,容易导致OOM
     val value: RDD[(Int, Int)] = rdd.mapPartitions(iter => iter.map((i => (i, 1))))
     value.collect().foreach(println)
+    Thread.sleep(Long.MaxValue)
     sc.stop()
   }
 }

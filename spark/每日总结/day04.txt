@@ -1,0 +1,73 @@
+1、RDD中随便写出15个转换算子,8个行动算子,并简述其功能。（转换算子和行动算子不能搞混）
+转换算子:
+    map
+    mapPartition
+    mapPartitionWidthIndex
+    flatMap
+    reduceByKey
+    aggregateByKey
+    foldByKey
+    combineByKey
+    groupByKey
+    glom
+    coalesce
+    zip
+    groupBy
+    filter
+    distinct
+    sample
+    repartition
+    sortBy
+
+行动算子:
+    foreach
+    collect
+    first
+    count
+    countBykey
+    reduce
+    take
+    takeByOrdered
+    aggregate
+    fold
+    save相关
+    reduce
+
+
+
+2、说说spark中RDD的序列化（为什么要序列化？怎么序列化？序列化的调优手段？）
+
+原因:算子逻辑运行在集群环境中,算子运行在driver中,两者分布在不同的机器上,但是需要数据上的交互,所以需要序列化
+怎么:
+    1.样例类
+    2.实现Seriliable接口
+调优:
+    使用kryo序列化
+    1.添加kryo序列化
+    2.注册需要使用kryo序列化的类    
+
+3、说说你对RDD血缘关系的理解。（要解释清什么叫血缘，什么叫依赖，不能搞混）
+血缘:关注这个RDD从哪里起始,到哪里结束
+依赖:只关注上一个有关系的RDD
+
+
+4、说说你对RDD依赖关系的理解。（要解释清楚宽窄依赖的区别）
+窄依赖:不走shuffle
+宽依赖:走shuffle
+
+5、说说你对spark中RDD的shuffle的理解。（什么叫shuffle？遇到什么就一定会走shuffle？）
+shuffle:涉及分区数据的再分配(同一个分区内的数据走向不同的分区)
+
+6、说说spark中的任务划分机制（application，job，stage，task的关系与计算方法要解释清楚）
+application:一个sc就是一个application
+job:一个行动算子就是一个job
+stage:stage个数是shuffle的个数+1
+task:是不走shuffle的最后一个算子的分区数
+
+application==>job=====>stage=====>task
+-----------------------------------上机-----------------------------------------
+
+7、省份广告点击Top3案例
+
+
+

@@ -11,6 +11,8 @@ object value13_sortBy {
     val rdd: RDD[Int] = sc.makeRDD(List(2, 1, 3, 4, 6, 5))
     //可以设置排序条件,默认升序
     rdd.sortBy(i=>i).collect().foreach(println)
+
+    Thread.sleep(Long.MaxValue)
     sc.stop()
   }
 }

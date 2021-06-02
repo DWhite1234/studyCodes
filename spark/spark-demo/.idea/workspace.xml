@@ -4,7 +4,43 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5711e5a-f948-4ff8-b55c-dbeeedaf8dc2" name="Default Changelist" comment="" />
+    <list default="true" id="e5711e5a-f948-4ff8-b55c-dbeeedaf8dc2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/data/user_visit_action.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/com/atguigu/accumulator/accumulator01_MyAccumulator.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/com/atguigu/accumulator/accumulator01_broadcast.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/com/atguigu/accumulator/accumulator01_system.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/com/atguigu/cache/cache01.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/com/atguigu/cache/cache02.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/com/atguigu/cache/cache03.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/com/atguigu/fileReadAndWrite/Operate_Object.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/com/atguigu/fileReadAndWrite/Operate_Sequence.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/com/atguigu/fileReadAndWrite/Operate_Text.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/com/atguigu/partition/MyOwnPartitioner.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/com/atguigu/partition/partition_source.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/com/atguigu/partition/partitioner01.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/atguigu/keyValue/KeyValue01_partitionBy.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/atguigu/keyValue/KeyValue01_partitionBy.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/atguigu/keyValue/KeyValue02_reduceByKey.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/atguigu/keyValue/KeyValue02_reduceByKey.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/atguigu/keyValue/KeyValue03_groupByKey.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/atguigu/keyValue/KeyValue03_groupByKey.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/atguigu/keyValue/KeyValue04_aggregateByKey.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/atguigu/keyValue/KeyValue04_aggregateByKey.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/atguigu/keyValue/KeyValue05_foldByKey.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/atguigu/keyValue/KeyValue05_foldByKey.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/atguigu/keyValue/KeyValue06_combineByKey.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/atguigu/keyValue/KeyValue06_combineByKey.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/atguigu/keyValue/KeyValue07_sortByKey.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/atguigu/keyValue/KeyValue07_sortByKey.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/atguigu/keyValue/KeyValue08_mapValues.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/atguigu/keyValue/KeyValue08_mapValues.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/atguigu/keyValue/KeyValue09_join.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/atguigu/keyValue/KeyValue09_join.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/atguigu/keyValue/KeyValue10_cogroup.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/atguigu/keyValue/KeyValue10_cogroup.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/atguigu/value/value01_map.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/atguigu/value/value01_map.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/atguigu/value/value02_mapPartitions.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/atguigu/value/value02_mapPartitions.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/atguigu/value/value03_mapPartitionsWithIndex.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/atguigu/value/value03_mapPartitionsWithIndex.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/atguigu/value/value04_flatMap.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/atguigu/value/value04_flatMap.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/atguigu/value/value05_glom.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/atguigu/value/value05_glom.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/atguigu/value/value06_groupby.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/atguigu/value/value06_groupby.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/atguigu/value/value09_sample.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/atguigu/value/value09_sample.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/atguigu/value/value11_coalesce.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/atguigu/value/value11_coalesce.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/atguigu/value/value12_repartition.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/atguigu/value/value12_repartition.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/atguigu/value/value13_sortBy.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/atguigu/value/value13_sortBy.scala" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,6 +51,13 @@
   </component>
   <component name="CodeStyleSettingsInfer">
     <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Package Object" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
@@ -56,7 +99,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../scala/scala-demo" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/data" />
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.38450074" />
@@ -70,20 +113,20 @@
       <recent name="E:\studyCodes\spark\spark-demo\src\main" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.atguigu.accumulator" />
+      <recent name="com.atguigu.fileReadAndWrite" />
+      <recent name="com.atguigu.cache" />
       <recent name="com.atguigu.dependency" />
       <recent name="com.atguigu.action" />
-      <recent name="com.atguigu.keyValue" />
-      <recent name="com.atguigu.doubleValue" />
-      <recent name="com.atguigu.value" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.KeyValue01_partitionBy">
-    <configuration name="KeyValue01_partitionBy" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.atguigu.keyValue.KeyValue01_partitionBy" />
+  <component name="RunManager" selected="Application.partitioner01">
+    <configuration name="Operate_Object" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.fileReadAndWrite.Operate_Object" />
       <module name="spark-demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.atguigu.keyValue.*" />
+          <option name="PATTERN" value="com.atguigu.fileReadAndWrite.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -91,12 +134,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Lineage01" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.atguigu.dependency.Lineage01" />
+    <configuration name="accumulator01_MyAccumulator" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.accumulator.accumulator01_MyAccumulator" />
       <module name="spark-demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.atguigu.dependency.*" />
+          <option name="PATTERN" value="com.atguigu.accumulator.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -104,12 +147,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Lineage02" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.atguigu.dependency.Lineage02" />
+    <configuration name="accumulator01_broadcast" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.accumulator.accumulator01_broadcast" />
       <module name="spark-demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.atguigu.dependency.*" />
+          <option name="PATTERN" value="com.atguigu.accumulator.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -117,12 +160,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="stage" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.atguigu.dependency.stage" />
+    <configuration name="accumulator01_system" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.accumulator.accumulator01_system" />
       <module name="spark-demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.atguigu.dependency.*" />
+          <option name="PATTERN" value="com.atguigu.accumulator.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -130,12 +173,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="test" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.atguigu.serializable.test" />
+    <configuration name="partitioner01" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.partition.partitioner01" />
       <module name="spark-demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.atguigu.serializable.*" />
+          <option name="PATTERN" value="com.atguigu.partition.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -156,11 +199,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.KeyValue01_partitionBy" />
-        <item itemvalue="Application.test" />
-        <item itemvalue="Application.stage" />
-        <item itemvalue="Application.Lineage02" />
-        <item itemvalue="Application.Lineage01" />
+        <item itemvalue="Application.partitioner01" />
+        <item itemvalue="Application.accumulator01_broadcast" />
+        <item itemvalue="Application.accumulator01_MyAccumulator" />
+        <item itemvalue="Application.accumulator01_system" />
+        <item itemvalue="Application.Operate_Object" />
       </list>
     </recent_temporary>
   </component>
@@ -188,7 +231,9 @@
       <workItem from="1622460340519" duration="5031000" />
       <workItem from="1622466916251" duration="9000" />
       <workItem from="1622507288041" duration="9174000" />
-      <workItem from="1622536331774" duration="13139000" />
+      <workItem from="1622536331774" duration="13287000" />
+      <workItem from="1622594053660" duration="8227000" />
+      <workItem from="1622628446613" duration="8558000" />
     </task>
     <servers />
   </component>
