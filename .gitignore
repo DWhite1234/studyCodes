@@ -3,3 +3,6 @@
 .idea/*
 target/*
 *.crc
+*.dat
+*.json
+_SUCCESS

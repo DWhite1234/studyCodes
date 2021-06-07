@@ -1,0 +1,28 @@
+1、SparkSQL是干嘛的？为什么会有SparkSQL?
+干嘛:sparkSQL是spark用于处理结构化数据的spark模块
+为什么会有:降低spark的难度,便于使用将sql转化为RDD或者df,ds执行
+
+2、SparkSQL底层有什么编程抽象？
+dataFrame,dataSet
+
+3、hive on spark  和 spark on hive区别？我们学的SparkSQL是什么？
+hive on spark:
+    核心是hive,hive既负责存储数据,又负责解析优化sql,spark只是负责用RDD运行计算
+spark on hive:
+    核心是spark,spark负责解析优化sql,hive负责存储数据,saprk使用df,ds运行    
+4、DF、DS、RDD三者之间的区别和联系？
+RDD:只关心数据本身
+DF:只关心数据结构,不关心数据累心
+DS:面向对象访问数据
+
+RDD(1.0) => DF(1.3) =>(DS 1.6)
+5、DF、DS、RDD三者如何转换？（画图说明）
+
+6、SparkSQL中有两种什么语法？简述这两种语法的区别和联系。
+SQL:
+    必选先创建视图,才能使用sql语法
+DSL:
+    不需要创建视图,可以直接调用dsl语法
+
+------------------------------上机---------------------------
+7、SparkSQL中自定义UDAF实现求平均年龄。

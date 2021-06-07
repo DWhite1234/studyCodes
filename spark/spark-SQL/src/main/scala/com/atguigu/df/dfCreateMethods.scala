@@ -1,26 +1,46 @@
 package com.atguigu.df
 
-import org.apache.spark.SparkConf
-import org.apache.spark.sql.{DataFrame, SparkSession}
+import com.atguigu.ds
+import com.atguigu.ds.User
+import org.apache.spark.rdd.RDD
+import org.apache.spark.{SparkConf, SparkContext}
+import org.apache.spark.sql.{DataFrame, Dataset, SparkSession}
 
 object dfCreateMethods {
   def main(args: Array[String]): Unit = {
     val conf = new SparkConf().setAppName("SparkCoreTest").setMaster("local[*]")
-    val ss: SparkSession = SparkSession.builder().config(conf).getOrCreate()
+    val sc = new SparkContext(conf)
+    val spark: SparkSession = SparkSession.builder().config(conf).getOrCreate()
 
-    //1.读取文件直接创建df
-    val df1: DataFrame = ss.read.json("E:\\studyCodes\\spark\\spark-SQL\\data\\user.json")
-    df1.show()
+    import spark.implicits._
+    //rdd 转换df,不是指列名
+    val rdd: RDD[(String, Int)] = sc.makeRDD(List(("hello", 1), ("spark", 1)))
+    rdd.toDF().show()
 
-    //2.sql风格创建,sql风格需要先创建视图,需要先有数据源
-    df1.createTempView("user")
-    val df2: DataFrame = ss.sql("select * from user")
+    //指定列名转换
+    rdd.toDF("name","age").show()
+
+
+    //基本数据类型直接创建df
+    val df: DataFrame = spark.createDataFrame(List(("hello", 2), ("spark", 2)))
+    df.toDF("name","age")
+    df.show()
+    //对象直接创建df
+    val df2: DataFrame = spark.createDataFrame(List(User("hello", 2), User("spark", 2)))
     df2.show()
 
-    //dsl风格,不需要创建视图
-    df1.select("*").show()
-    df1.select("*").where("age > 18").show()
+    //ds转换
+    val ds: Dataset[User] = spark.createDataset(List(User("hello", 3), User("spark", 3)))
+    val df3: DataFrame = ds.toDF()
+    df3.show()
+    /*
+   总结:DF的三种创建方式
+   1.RDD转换
+   2.createDataFrame直接创建
+   3.DS.toDF
+    */
 
-    ss.stop()
+    spark.stop()
   }
 }
+
