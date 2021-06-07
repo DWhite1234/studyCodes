@@ -1,0 +1,23 @@
+1、RDD的cache和checkPoint的区别和联系。企业开发时如何使用。
+区别:
+    1.cache不会切断血缘关系,checkpoint会切断血缘关系
+    2.checkpoint会额外启动一个job来运行
+    3.cache 存储在内存中,checkpoint存储在磁盘中
+联系:    
+    1.都能做rdd的缓存,方便重用
+
+使用:
+    chache和checkpoint配合使用    
+2、说说你对spark累加器的理解（可以画图说明） 
+分布式共享变量
+
+3、说说你对spark广播变量的理解（可以画图说明）
+
+
+--------------------上机---------------------------
+4、自定义累加器案例  List("Hello", "Hello", "Hello", "Hello", "Spark", "Spark") =>  （Hello，4）
+
+
+
+
+

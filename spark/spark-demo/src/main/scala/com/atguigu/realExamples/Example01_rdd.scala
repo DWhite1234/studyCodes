@@ -3,7 +3,7 @@ package com.atguigu.realExamples
 import org.apache.spark.rdd.RDD
 import org.apache.spark.{SparkConf, SparkContext}
 
-object Example01 {
+object Example01_rdd {
   def main(args: Array[String]): Unit = {
 
     val conf = new SparkConf().setAppName("SparkCoreTest").setMaster("local[*]")

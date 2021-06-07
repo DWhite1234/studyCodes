@@ -1,5 +1,6 @@
 package com.atguigu.realExamples
 
+import org.apache.spark.rdd.RDD
 import org.apache.spark.{SparkConf, SparkContext}
 
 object test1 {
@@ -25,9 +26,9 @@ object test1 {
 
 //    val bool: Boolean = value.contains(-1)
 //    println(bool)
-    
-    
-    
+    println("========================flatMap==========================")
+    val value1: RDD[Nothing] = sc.makeRDD(List())
+    value1.flatMap(i=>i).collect().foreach(println)
     sc.stop()
   }
 }

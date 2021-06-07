@@ -5,12 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e5711e5a-f948-4ff8-b55c-dbeeedaf8dc2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/data/test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/atguigu/realExamples/Example01.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/atguigu/realExamples/Example02.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/atguigu/realExamples/test1.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spark-SQL/data/user.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spark-SQL/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spark-SQL/spark-SQL.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spark-SQL/src/main/resources/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spark-SQL/src/main/scala/com/atguigu/df/dfCreateMethods.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spark-SQL/src/main/scala/com/atguigu/ds/dsCreateMethods.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spark-SQL/src/main/scala/com/atguigu/sparkSession/SparkSessionTest.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/com/atguigu/exercise/exercise01.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/com/atguigu/realExamples/Example01_accumulator.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/com/atguigu/realExamples/Example01_case_class.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/com/atguigu/realExamples/Example03.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/scala_compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/scala_compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/atguigu/value/value13_sortBy.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/atguigu/value/value13_sortBy.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/atguigu/realExamples/Example01.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/atguigu/realExamples/Example01_rdd.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/atguigu/realExamples/Example02.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/atguigu/realExamples/Example02.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/atguigu/realExamples/test1.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/atguigu/realExamples/test1.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +41,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Package Object" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -42,6 +57,7 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$PROJECT_DIR$/../../../developInstall/localRepository/org/apache/spark/spark-core_2.12/3.0.0/spark-core_2.12-3.0.0-sources.jar!/org/apache/spark/shuffle/sort/BypassMergeSortShuffleWriter.java" root0="SKIP_INSPECTION" />
     <setting file="jar://$PROJECT_DIR$/../../../developInstall/localRepository/org/scala-lang/scala-library/2.12.10/scala-library-2.12.10-sources.jar!/scala/package.scala" root0="SKIP_INSPECTION" />
   </component>
   <component name="MavenImportPreferences">
@@ -70,15 +86,16 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../scala/scala-demo" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../spark-SQL/src/main/resources" />
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.38450074" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\studyCodes\spark\spark-SQL\src\main\resources" />
       <recent name="E:\studyCodes\spark\spark-demo\data" />
       <recent name="E:\studyCodes\spark\spark-demo\src\main\scala" />
       <recent name="E:\studyCodes\spark\spark-demo\src\main\resources" />
@@ -92,9 +109,9 @@
       <recent name="com.atguigu.dependency" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Example02">
-    <configuration name="Example01" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.atguigu.realExamples.Example01" />
+  <component name="RunManager" selected="Application.dfCreateMethods">
+    <configuration name="Example01_accumulator" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.realExamples.Example01_accumulator" />
       <module name="spark-demo" />
       <extension name="coverage">
         <pattern>
@@ -106,8 +123,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Example02" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.atguigu.realExamples.Example02" />
+    <configuration name="Example01_case_class" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.realExamples.Example01_case_class" />
       <module name="spark-demo" />
       <extension name="coverage">
         <pattern>
@@ -119,34 +136,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="accumulator01_broadcast" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.atguigu.accumulator.accumulator01_broadcast" />
-      <module name="spark-demo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.atguigu.accumulator.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="partitioner01" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.atguigu.partition.partitioner01" />
-      <module name="spark-demo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.atguigu.partition.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="test1" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.atguigu.realExamples.test1" />
+    <configuration name="Example03" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.realExamples.Example03" />
       <module name="spark-demo" />
       <extension name="coverage">
         <pattern>
@@ -158,26 +149,39 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+    <configuration name="SparkSessionTest" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.sparkSession.SparkSessionTest" />
+      <module name="spark-SQL" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.atguigu.sparkSession.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="dfCreateMethods" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.df.dfCreateMethods" />
+      <module name="spark-SQL" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.atguigu.df.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Example02" />
-        <item itemvalue="Application.test1" />
-        <item itemvalue="Application.Example01" />
-        <item itemvalue="Application.partitioner01" />
-        <item itemvalue="Application.accumulator01_broadcast" />
+        <item itemvalue="Application.dfCreateMethods" />
+        <item itemvalue="Application.SparkSessionTest" />
+        <item itemvalue="Application.Example03" />
+        <item itemvalue="Application.Example01_case_class" />
+        <item itemvalue="Application.Example01_accumulator" />
       </list>
     </recent_temporary>
   </component>
@@ -210,6 +214,11 @@
       <workItem from="1622628446613" duration="8558000" />
       <workItem from="1622684582326" duration="20773000" />
       <workItem from="1622766412687" duration="165000" />
+      <workItem from="1622766611253" duration="17542000" />
+      <workItem from="1622853562187" duration="6685000" />
+      <workItem from="1622875550616" duration="2718000" />
+      <workItem from="1622879358680" duration="1175000" />
+      <workItem from="1622881235297" duration="2138000" />
     </task>
     <servers />
   </component>

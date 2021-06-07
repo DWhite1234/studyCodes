@@ -12,8 +12,8 @@ object Example02 {
     val sc = new SparkContext(conf)
 
     //先求Top10
-    //    val dataSource: RDD[String] = sc.textFile("E:\\studyCodes\\spark\\spark-demo\\data\\user_visit_action.txt")
-    val dataSource: RDD[String] = sc.textFile("E:\\studyCodes\\spark\\spark-demo\\data\\test")
+        val dataSource: RDD[String] = sc.textFile("E:\\studyCodes\\spark\\spark-demo\\data\\user_visit_action.txt")
+//    val dataSource: RDD[String] = sc.textFile("E:\\studyCodes\\spark\\spark-demo\\data\\test")
     val userActionRdd: RDD[UserAction] = dataSource.map(
       i => {
         val list: Array[String] = i.split("_")
@@ -87,6 +87,8 @@ object Example02 {
 
     val longs: Array[String] = top10.map(_.product_id)
 
+
+
     //取出每条数据 的品类id和sessionid,不区别点击,下单,支付
     //创建广播变量
     val acc: Broadcast[Array[String]] = sc.broadcast(longs)
@@ -98,32 +100,54 @@ object Example02 {
         val strings2: Array[String] = strings(10).split(",")
         //        bro.contains(strings(6)) || bro.intersect(strings1) != Nil || bro.intersect(strings2) != Nil
         bro.contains(strings(6)) || bro.intersect(strings1).size > 0 || bro.intersect(strings2).size > 0
+//        bro.contains(strings(6))
       }
     )
 
-    val value4: RDD[Any] = value3.map(
+    val value4: RDD[(String, Int)] = value3.flatMap(
       i => {
         val strings: Array[String] = i.split("_")
         if (strings(6) != "-1") {
-          List(strings(6) + "-" + strings(2), 1)
+          List((strings(6) + "--" + strings(2), 1))
         } else if (strings(8) != "null") {
-          strings(8).split(",").map(
+          strings(8).intersect(acc.value).split(",").map(
             a => {
-              (a + "-" + strings(2), 1)
+              (a + "--" + strings(2), 1)
             }
-          ).toList
+          )
         } else if (strings(10) != "null") {
-          strings(10).split(",").map(
+          strings(10).intersect(acc.value).split(",").map(
             a => {
-              (a + "-" + strings(2), 1)
+              (a + "--" + strings(2), 1)
             }
-          ).toList
+          )
+        } else {
+          Nil
         }
       }
     )
 
-    value4.collect().foreach(println)
+    val value5: RDD[(String, Iterable[Int])] = value4.groupByKey()
+    val value6: RDD[(String, Int)] = value5.mapValues(
+      i => i.sum
+    )
 
+    val value7: RDD[(String, (String, Int))] = value6.map(
+      i => {
+        val strings: Array[String] = i._1.split("--")
+        (strings(0), (strings(1), i._2))
+      }
+    )
+
+    val value8: RDD[(String, Iterable[(String, Int)])] = value7.groupByKey()
+    val value9: RDD[(String, List[(String, Int)])] = value8.map(
+      i => {
+        (i._1, i._2.toList.sortBy(i => i._2)(Ordering[Int].reverse).take(10))
+      }
+    )
+    value9.collect().foreach(println)
+
+    println(longs.toList)
 
     sc.stop()
   }
