@@ -29,7 +29,7 @@
     1.单点启动
         hbase-daemon.sh start master
         hbase-daemon.sh start regionserver
-    2.群起
+    2.群起,需要启动zk
         start-hbase.sh
         stop-hbase.sh 
     3.页面

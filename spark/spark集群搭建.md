@@ -70,7 +70,7 @@ bin/spark-submit \
 
 # 3.yarn模式(最常用)
  1.修改spark-env.sh
- 配置spart任务运行在yarn上
+ 配置spark任务运行在yarn上
  YARN_CONF_DIR=/opt/module/hadoop-3.1.3/etc/hadoop
 
  配置日志读取  

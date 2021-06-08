@@ -5,25 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e5711e5a-f948-4ff8-b55c-dbeeedaf8dc2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../spark-SQL/data/1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spark-SQL/src/main/resources/hive-site.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spark-SQL/src/main/scala/com/atguigu/df/dfLanguageMethods.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spark-SQL/src/main/scala/com/atguigu/fun/UDAF.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spark-SQL/src/main/scala/com/atguigu/fun/UDF.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spark-SQL/src/main/scala/com/atguigu/hive/OperateHive.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spark-SQL/src/main/scala/com/atguigu/hive/Top3.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spark-SQL/src/main/scala/com/atguigu/mysql/Read.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spark-SQL/src/main/scala/com/atguigu/mysql/Write.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spark-SQL/src/main/scala/com/atguigu/readAndSaveData/ReadData.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spark-SQL/src/main/scala/com/atguigu/readAndSaveData/SaveData.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spark-SQL/src/main/scala/com/atguigu/transform/DForDStoRDD.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spark-SQL/src/main/scala/com/atguigu/transform/RDDToDForDS.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spark-SQL/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spark-SQL/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spark-SQL/src/main/resources/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../spark-SQL/src/main/resources/log4j.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spark-SQL/src/main/scala/com/atguigu/df/dfCreateMethods.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../spark-SQL/src/main/scala/com/atguigu/df/dfCreateMethods.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spark-SQL/src/main/scala/com/atguigu/ds/dsCreateMethods.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../spark-SQL/src/main/scala/com/atguigu/ds/dsCreateMethods.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spark-SQL/target/classes/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../spark-SQL/target/classes/log4j.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Hbase/HBase使用.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../Hbase/HBase使用.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spark集群搭建.md" beforeDir="false" afterPath="$PROJECT_DIR$/../spark集群搭建.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +75,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.38450074" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Scala" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -221,6 +205,8 @@
       <workItem from="1622881235297" duration="2138000" />
       <workItem from="1623026001318" duration="6499000" />
       <workItem from="1623037215847" duration="14229000" />
+      <workItem from="1623067915760" duration="768000" />
+      <workItem from="1623112319992" duration="615000" />
     </task>
     <servers />
   </component>
