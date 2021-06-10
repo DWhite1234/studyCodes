@@ -56,9 +56,10 @@ vim hive-site.xml
 <?xml version="1.0"?>
 <?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
 <configuration>
+    <!-- 指定编码格式,解决hive中文乱码 -->
     <property>
         <name>javax.jdo.option.ConnectionURL</name>
-        <value>jdbc:mysql://hadoop102:3306/metastore?useSSL=false</value>
+        <value>jdbc:mysql://hadoop102:3306/metastore?useSSL=false&amp;useUnicode=true&amp;characterEncoding=UTF-8</value>
     </property>
 
     <property>
