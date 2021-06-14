@@ -52,3 +52,9 @@ distributed by必须卸载sorted by之前
 cluster by 是同时具有sorted by和distributed by的功能,只不过是sorted by和distributed by
 针对的是同一个字段,同时只能进行升序排序,不能指定降序排序
 
+# 9.get_json_object函数
+get_json_object("[{"name":"大郎","sex":"男","age":"25"},{"name":"西门庆","sex":"男","age":"47"}]","$[0]")
+
+get_json_object("["person":{"name":"大郎","sex":"男","age":"25"},"person1":{"name":"西门庆","sex":"男","age":"47"}]","$.person")
+取出json字符串中的json对象
+
