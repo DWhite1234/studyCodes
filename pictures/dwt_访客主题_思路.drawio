@@ -1,1 +1,85 @@
-<mxfile host="Electron" modified="2021-06-19T01:28:54.060Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/12.9.3 Chrome/80.0.3987.158 Electron/8.2.0 Safari/537.36" etag="U_FfNH9Tu9QUdDsHU14h" version="12.9.3" type="device"><diagram id="hdJqdke0FVg75BG2Binw" name="第 1 页">5VpLr+I2FP41ltrFXMV2Hs4y4YbpptJIdzFtN6OIGHAbYhTMAP31tRMDiW0GhgEy3EpI2Mfv7zs+DwPAo8X2Y50v57/zgpYAecUW4FeAEPSQL7+UZNdKQoxawaxmhe50FLyxf+l+pJauWUFXvY6C81KwZV844VVFJ6Iny+uab/rdprzsr7rMZ9QSvE3y0pZ+ZoWYt1KMPe/Y8Btls7le2g+JHrLI971119U8L/imI8IZwKOac9GWFtsRLRV6e2DaceMTrYed1bQSlwzwxv6b+PyxHsHtX18gnVWvyfyDZuNrXq71iYuN+AIyApIMpGOQBaqQIJD5ICUgTUEWq2pMfoFYtZIxSCOQhSAOQOqpAnmVQ37VZxa7PZI1X1cFVXvxAE43cybo2zKfqNaN1B0pm4tFKWtQFgtWSzYZr2R9xdcKyVTvlNaCbk9CAA/ASpWkfEFFvZNd9gOw5mK31zJd3xy5haGWzTu0IqKFudan2WHuI+KyoEH/DgKwg4DVhQT4T0cAjvoEoIsJ8O9FgH89AVHT6IMkboiIFfJPQkToGzcBDk5EcD0R8lo/LRMk/OmYCC0mputm1N+cVRaI8uiij9RK1PwfOuIlr6Wk4pXsmU5ZWRqivGQzheZEQkWlPFVAMul8E92wYEWhlnFS0yfvFsYJGsYpspnwXUTci4fI4qGkU/HueQiMG4ECm4fgkTzE/08eiHkf0GU84HvxsN9PhwgLfVoViYr7FYxlvlqxSZ8LumXij075T4XXS6Brr1sNX1PZ9bCkhZUqGEjKjfB1PaHnwj0b8TOI7mU1LXPBvva34YJZr/BJ6qfoXCyvT2gQGEy129ejuqmEMRE2oocQGhOJvJ5RYU3UsH449g8oArydIngvcUz6yhDib6qDqnyiNZOnULf01iqChlQRZNz5wDSqT6MidmLVBIKJ+qjQMAJJ1ASXECTkEDX2IskIxLK7b0eSqk+MABk1TWHTdJipiU7JRfN8K6w6E43mq2X73jFlW2X0b2HwUXyCs47uEYfu3S05hnZy5uDu3TpgaPCBHdnyQwNSaOdojhvwbvnwjecjTIbmw87Uni0g8gcNiIznqEP9e71daLhNYlJ+b29np4o/EBCFKOgoA3zxvGjIgAgOGjSbT5bEu1ZHvIF1hJyJiForfjJY6eW8nvPtszM2GauXae2sA0cIhUbNwKjpJgsZSNNzk7qnGKvFVNiV6pVSCAjSs6ft2UZNRGYesruePfvwAVlgOByCbYcDXR4H3u1tcK+0T+xygiHNSYz6lPrXupzYMCcQIu9FGifPJwQRiIKHGhd004y8534epRatfRxKL0Ji0OldqxgkthXjsbqAHI6mzYozp4WXybTXJNNRUwh/BtNLglMoDpUMI/eLhnZtRP1EFsMOvijVTlG5dy384ML/3eZrgfEGFfsO94kdHF6RsMnq8a8c7U06/iMGZ/8B</diagram></mxfile>
+<mxfile>
+    <diagram id="hdJqdke0FVg75BG2Binw" name="第 1 页">
+        <mxGraphModel dx="912" dy="614" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="0F4StWGrC1xZ_1egnDAh-2" value="dwt_访客主题(13号数据)" style="rounded=0;whiteSpace=wrap;html=1;direction=south;" parent="1" vertex="1">
+                    <mxGeometry x="130" y="100" width="160" height="280" as="geometry"/>
+                </mxCell>
+                <mxCell id="0F4StWGrC1xZ_1egnDAh-3" value="dws_访客主题(14号数据)" style="rounded=0;whiteSpace=wrap;html=1;direction=south;" parent="1" vertex="1">
+                    <mxGeometry x="370" y="200" width="160" height="240" as="geometry"/>
+                </mxCell>
+                <mxCell id="0F4StWGrC1xZ_1egnDAh-4" value="dws_访客主题(7天前数据)" style="rounded=0;whiteSpace=wrap;html=1;direction=south;" parent="1" vertex="1">
+                    <mxGeometry x="640" y="110" width="160" height="240" as="geometry"/>
+                </mxCell>
+                <mxCell id="0F4StWGrC1xZ_1egnDAh-5" value="dws_访客主题(30天前数据)" style="rounded=0;whiteSpace=wrap;html=1;direction=south;" parent="1" vertex="1">
+                    <mxGeometry x="860" y="110" width="160" height="240" as="geometry"/>
+                </mxCell>
+                <mxCell id="0F4StWGrC1xZ_1egnDAh-6" value="full join" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="310" y="270" width="40" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="0F4StWGrC1xZ_1egnDAh-7" value="left join" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="560" y="250" width="50" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="0F4StWGrC1xZ_1egnDAh-9" value="left join" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="810" y="220" width="50" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="0F4StWGrC1xZ_1egnDAh-10" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="0F4StWGrC1xZ_1egnDAh-3" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="500" y="550" as="sourcePoint"/>
+                        <mxPoint x="340" y="610" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="0F4StWGrC1xZ_1egnDAh-11" value="" style="endArrow=classic;html=1;exitX=0.998;exitY=0.563;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="0F4StWGrC1xZ_1egnDAh-2" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="210" y="520" as="sourcePoint"/>
+                        <mxPoint x="340" y="610" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="0F4StWGrC1xZ_1egnDAh-13" value="把旧表前30天的数据和新表一天的数据full join" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+                    <mxGeometry x="290" y="610" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="0F4StWGrC1xZ_1egnDAh-14" value="旧表" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="190" y="300" width="40" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="0F4StWGrC1xZ_1egnDAh-15" value="新表" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="430" y="380" width="40" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="0F4StWGrC1xZ_1egnDAh-16" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="0F4StWGrC1xZ_1egnDAh-4" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="570" y="570" as="sourcePoint"/>
+                        <mxPoint x="610" y="820" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="0F4StWGrC1xZ_1egnDAh-17" value="" style="endArrow=classic;html=1;exitX=0.625;exitY=1.007;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="0F4StWGrC1xZ_1egnDAh-13" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="370" y="800" as="sourcePoint"/>
+                        <mxPoint x="600" y="820" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="0F4StWGrC1xZ_1egnDAh-18" value="把新的数据left join 7天前的每日数据,减去7天前的数据,可以求出最新的7天数据" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+                    <mxGeometry x="530" y="830" width="140" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="0F4StWGrC1xZ_1egnDAh-20" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="0F4StWGrC1xZ_1egnDAh-5" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="920" y="470" as="sourcePoint"/>
+                        <mxPoint x="900" y="1120.800048828125" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="0F4StWGrC1xZ_1egnDAh-21" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="0F4StWGrC1xZ_1egnDAh-18" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="680" y="1070" as="sourcePoint"/>
+                        <mxPoint x="890" y="1120" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="0F4StWGrC1xZ_1egnDAh-22" value="与7天前同理" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+                    <mxGeometry x="850" y="1120" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="0F4StWGrC1xZ_1egnDAh-23" value="最近7天+今天-7天前" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="540" y="940" width="130" height="20" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
