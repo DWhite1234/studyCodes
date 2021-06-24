@@ -23,3 +23,7 @@ hdfs.useLocalTimeStamp  默认false
 hdfs.fileType = DataStream
 
 
+注意点:
+    hdfs 的文件滚动方式有两种,按文件大小滚动和时间转移序列滚动;
+    时间转移序列滚动方式 要求必须设置header中timestamp属性,但是如果使用的是拦截器的时间,就会造成数据的产生时间与进入的分区不一致的文件,所以必须自定义拦截器设置timestamp属性
+
