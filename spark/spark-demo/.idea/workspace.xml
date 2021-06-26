@@ -5,9 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e5711e5a-f948-4ff8-b55c-dbeeedaf8dc2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../Hbase/HBase使用.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../Hbase/HBase使用.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spark集群搭建.md" beforeDir="false" afterPath="$PROJECT_DIR$/../spark集群搭建.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../flink/flink-demo/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../flink/flink-demo/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../flink/flink-demo/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../flink/flink-demo/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../flink/flink-demo/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../flink/flink-demo/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../flink/flink-demo/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../flink/flink-demo/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../flink/flink-demo/.ignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../flink/flink-demo/flink-demo.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../flink/flink-demo/src/main/java/Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +83,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.38450074" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Scala" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -207,6 +215,7 @@
       <workItem from="1623037215847" duration="14229000" />
       <workItem from="1623067915760" duration="768000" />
       <workItem from="1623112319992" duration="615000" />
+      <workItem from="1624697768285" duration="19000" />
     </task>
     <servers />
   </component>
