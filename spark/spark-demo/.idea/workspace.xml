@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e5711e5a-f948-4ff8-b55c-dbeeedaf8dc2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../hadoop/集群时间同步.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../hadoop/集群时间同步.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/atguigu/accumulator/accumulator01_broadcast.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/atguigu/accumulator/accumulator01_broadcast.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +74,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.38450074" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Scala" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -160,11 +160,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Top3" />
-        <item itemvalue="Application.OperateHive" />
         <item itemvalue="Application.Write" />
-        <item itemvalue="Application.Read" />
+        <item itemvalue="Application.Top3" />
         <item itemvalue="Application.SaveData" />
+        <item itemvalue="Application.Read" />
+        <item itemvalue="Application.OperateHive" />
       </list>
     </recent_temporary>
   </component>
@@ -209,6 +209,13 @@
       <workItem from="1624697768285" duration="19000" />
       <workItem from="1624849015981" duration="78000" />
       <workItem from="1624886426488" duration="491000" />
+      <workItem from="1624938080688" duration="278000" />
+      <workItem from="1624939097546" duration="1057000" />
+      <workItem from="1624945966645" duration="506000" />
+      <workItem from="1624952773986" duration="556000" />
+      <workItem from="1624953603191" duration="167000" />
+      <workItem from="1624954623391" duration="1358000" />
+      <workItem from="1624956028358" duration="43000" />
     </task>
     <servers />
   </component>
