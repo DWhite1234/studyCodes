@@ -5,17 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e5711e5a-f948-4ff8-b55c-dbeeedaf8dc2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../flink/flink-demo/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../flink/flink-demo/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../flink/flink-demo/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../flink/flink-demo/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../flink/flink-demo/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../flink/flink-demo/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../flink/flink-demo/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../flink/flink-demo/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../flink/flink-demo/.ignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../flink/flink-demo/flink-demo.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../flink/flink-demo/src/main/java/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../hadoop/集群时间同步.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../hadoop/集群时间同步.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -216,11 +207,25 @@
       <workItem from="1623067915760" duration="768000" />
       <workItem from="1623112319992" duration="615000" />
       <workItem from="1624697768285" duration="19000" />
+      <workItem from="1624849015981" duration="78000" />
+      <workItem from="1624886426488" duration="491000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
