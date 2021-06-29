@@ -6,7 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="e5711e5a-f948-4ff8-b55c-dbeeedaf8dc2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/atguigu/accumulator/accumulator01_broadcast.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/atguigu/accumulator/accumulator01_broadcast.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/atguigu/exercise/exercise01.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/atguigu/exercise/exercise01.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/atguigu/partition/partition_source.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/atguigu/partition/partition_source.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/atguigu/source/SourceByFile.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/atguigu/source/SourceByFile.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/atguigu/top3/Top3.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/atguigu/top3/Top3.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/log4j.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,8 +75,8 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="D:/video/0225/13_尚硅谷大数据技术之Spark/3.代码/SparkSQL0225" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/target/classes/com" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.38450074" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
@@ -78,11 +84,14 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\studyCodes\spark\spark-demo\target\classes\com" />
+      <recent name="E:\studyCodes\spark\spark-demo\src\main\resources" />
       <recent name="E:\studyCodes\spark\spark-SQL\src\main\resources" />
       <recent name="E:\studyCodes\spark\spark-demo\data" />
       <recent name="E:\studyCodes\spark\spark-demo\src\main\scala" />
-      <recent name="E:\studyCodes\spark\spark-demo\src\main\resources" />
-      <recent name="E:\studyCodes\spark\spark-demo\src\main" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\studyCodes\spark\spark-demo\target\classes" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.atguigu.realExamples" />
@@ -92,13 +101,13 @@
       <recent name="com.atguigu.dependency" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Top3">
-    <configuration name="OperateHive" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.atguigu.hive.OperateHive" />
-      <module name="spark-SQL" />
+  <component name="RunManager" selected="Application.DoubleValue02_union">
+    <configuration name="DoubleValue02_union" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.doubleValue.DoubleValue02_union" />
+      <module name="spark-demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.atguigu.hive.*" />
+          <option name="PATTERN" value="com.atguigu.doubleValue.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -106,21 +115,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Read" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.atguigu.mysql.Read" />
-      <module name="spark-SQL" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.atguigu.mysql.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SaveData" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.atguigu.readAndSaveData.SaveData" />
+    <configuration name="ReadData" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.readAndSaveData.ReadData" />
       <module name="spark-SQL" />
       <extension name="coverage">
         <pattern>
@@ -132,12 +128,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Top3" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.atguigu.hive.Top3" />
+    <configuration name="SparkSessionTest" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.sparkSession.SparkSessionTest" />
       <module name="spark-SQL" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.atguigu.hive.*" />
+          <option name="PATTERN" value="com.atguigu.sparkSession.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -145,26 +141,52 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Write" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.atguigu.mysql.Write" />
-      <module name="spark-SQL" />
+    <configuration name="Top3 (1)" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.top3.Top3" />
+      <module name="spark-demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.atguigu.mysql.*" />
+          <option name="PATTERN" value="com.atguigu.top3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="exercise01" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.exercise.exercise01" />
+      <module name="spark-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.atguigu.exercise.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Write" />
-        <item itemvalue="Application.Top3" />
-        <item itemvalue="Application.SaveData" />
-        <item itemvalue="Application.Read" />
-        <item itemvalue="Application.OperateHive" />
+        <item itemvalue="Application.DoubleValue02_union" />
+        <item itemvalue="Application.Top3 (1)" />
+        <item itemvalue="Application.exercise01" />
+        <item itemvalue="Application.SparkSessionTest" />
+        <item itemvalue="Application.ReadData" />
       </list>
     </recent_temporary>
   </component>
@@ -216,6 +238,11 @@
       <workItem from="1624953603191" duration="167000" />
       <workItem from="1624954623391" duration="1358000" />
       <workItem from="1624956028358" duration="43000" />
+      <workItem from="1624967856948" duration="3236000" />
+      <workItem from="1624971116401" duration="522000" />
+      <workItem from="1624971794655" duration="11000" />
+      <workItem from="1624971823161" duration="77000" />
+      <workItem from="1624971906632" duration="1047000" />
     </task>
     <servers />
   </component>

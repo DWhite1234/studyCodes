@@ -11,9 +11,9 @@ object SourceByFile {
     val value: RDD[String] = sc.textFile("E:\\studyCodes\\spark\\spark-demo\\data\\1.txt")
     /*
     1.不指定分区
-      def defaultMinPartitions: Int = math.min(defaultParallelism, 2)
 
       defaultParallelism:scheduler.conf.getInt("spark.default.parallelism", totalCores)
+      def defaultMinPartitions: Int = math.min(defaultParallelism, 2)
 
       默认分区为最大核心线程数,读取文件默认取2个分区
      */

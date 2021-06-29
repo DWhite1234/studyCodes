@@ -8,7 +8,6 @@ object exercise01 {
   def main(args: Array[String]): Unit = {
     val conf = new SparkConf().setAppName("SparkCoreTest").setMaster("local[*]")
     val sc = new SparkContext(conf)
-
     // List("Hello", "Hello", "Hello", "Hello", "Spark", "Spark") =>  （Hello，4）
     val value: RDD[String] = sc.makeRDD(List("Hello", "Hello", "Hello", "Hello", "Spark", "Spark"))
 
