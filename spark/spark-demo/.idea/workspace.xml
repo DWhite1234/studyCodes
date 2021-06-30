@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5711e5a-f948-4ff8-b55c-dbeeedaf8dc2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/atguigu/exercise/exercise01.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/atguigu/exercise/exercise01.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/atguigu/partition/partition_source.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/atguigu/partition/partition_source.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/atguigu/source/SourceByFile.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/atguigu/source/SourceByFile.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/atguigu/top3/Top3.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/atguigu/top3/Top3.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/log4j.properties" afterDir="false" />
-    </list>
+    <list default="true" id="e5711e5a-f948-4ff8-b55c-dbeeedaf8dc2" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -242,7 +233,7 @@
       <workItem from="1624971116401" duration="522000" />
       <workItem from="1624971794655" duration="11000" />
       <workItem from="1624971823161" duration="77000" />
-      <workItem from="1624971906632" duration="1047000" />
+      <workItem from="1624971906632" duration="1331000" />
     </task>
     <servers />
   </component>

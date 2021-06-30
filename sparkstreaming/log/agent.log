@@ -1,0 +1,17 @@
+2021-06-30 18:59:54,756  ERROR --- [                                              main]  org.apache.spark.SparkContext                                                   (line:    94)  :  Error initializing SparkContext.
+org.apache.spark.SparkException: Could not parse Master URL: 'lcoal[*]'
+	at org.apache.spark.SparkContext$.org$apache$spark$SparkContext$$createTaskScheduler(SparkContext.scala:2924)
+	at org.apache.spark.SparkContext.<init>(SparkContext.scala:528)
+	at org.apache.spark.streaming.StreamingContext$.createNewSparkContext(StreamingContext.scala:851)
+	at org.apache.spark.streaming.StreamingContext.<init>(StreamingContext.scala:85)
+	at com.atguigu.CreateDStreamByRDDQueue$.main(CreateDStreamByRDDQueue.scala:14)
+	at com.atguigu.CreateDStreamByRDDQueue.main(CreateDStreamByRDDQueue.scala)
+2021-06-30 20:55:03,236  ERROR --- [                                              main]  org.apache.spark.streaming.StreamingContext                                     (line:    94)  :  Error starting the context, marking it as stopped
+java.lang.IllegalArgumentException: requirement failed: No output operations registered, so nothing to execute
+	at scala.Predef$.require(Predef.scala:281)
+	at org.apache.spark.streaming.DStreamGraph.validate(DStreamGraph.scala:169)
+	at org.apache.spark.streaming.StreamingContext.validate(StreamingContext.scala:518)
+	at org.apache.spark.streaming.StreamingContext.liftedTree1$1(StreamingContext.scala:578)
+	at org.apache.spark.streaming.StreamingContext.start(StreamingContext.scala:577)
+	at com.atguigu.CreateDStreamByRDDQueue$.main(CreateDStreamByRDDQueue.scala:24)
+	at com.atguigu.CreateDStreamByRDDQueue.main(CreateDStreamByRDDQueue.scala)
