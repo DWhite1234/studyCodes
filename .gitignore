@@ -6,3 +6,6 @@ target/*
 *.dat
 *.json
 _SUCCESS
+part-*
+checkpoint-*
+log-*
