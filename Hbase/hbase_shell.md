@@ -36,3 +36,6 @@ deleteall 'student2','1001','info:name'
 scan '表名','rowkey',{STARTROW=>'',STOPROW=>''}
 <!-- 扫描全表 -->
 scan '表名'
+
+注意:
+     为了防止phoenix创建的表在hbase shell中列名显示异常,在创建表的时候加上COLUMN_ENCODED_BYTES= 0

@@ -1,7 +1,7 @@
 # phoenix shell操作
 ## 1.视图映射
 <!-- 创建视图 -->
-create view "test"(id varchar primary key,"info1"."name" varchar, "info2"."address" varchar);
+create view "test"(id varchar primary key,"info1"."name" varchar, "info2"."address" varchar)COLUMN_ENCODED_BYTES= 0;
 <!-- 删除视图 -->
 drop view "test";
 
