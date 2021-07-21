@@ -5,16 +5,184 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="76eb7391-8735-405e-b98b-b194271fe0ee" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/compress/TestCompress.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hadoop集群搭建.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MapJoin.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/atguigu/parttitionner/PartDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/parttitionner/PartDriver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/atguigu/parttitionner/PartMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/parttitionner/PartMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/atguigu/parttitionner/PartReducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/parttitionner/PartReducer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/atguigu/wordcount/WordCount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/wordcount/WordCount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/mapJoin/MapJoinDriver.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/atguigu/mapJoin/MapJoinDriver.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/parttitionner/PartDriver.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/atguigu/parttitionner/PartDriver.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/wordcount/WordCount.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/atguigu/wordcount/WordCount.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MapReduce工作机制.md" beforeDir="false" afterPath="$PROJECT_DIR$/../MapReduce工作机制.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MapReduce代码流程.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../combiner总结.md" beforeDir="false" afterPath="$PROJECT_DIR$/../combiner总结.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hadoop新特性.md" beforeDir="false" afterPath="$PROJECT_DIR$/../hadoop新特性.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hadoop集群总结.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../排序.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../自定义output.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../计数器.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spark/spark-demo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../spark/spark-demo/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spark/spark-demo/src/main/scala/com/atguigu/cache/cache01.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../../spark/spark-demo/src/main/scala/com/atguigu/cache/cache01.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spark/sparkStreaming-demo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../spark/sparkStreaming-demo/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/.idea/scala_compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/dw-chart/dw-chart.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/dw-chart/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/dw-chart/src/main/java/com/demo/DemoApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/dw-chart/src/main/java/com/demo/controller/DictController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/dw-chart/src/main/java/com/demo/controller/IndexController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/dw-chart/src/main/java/com/demo/utils/GetDate.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/dw-chart/src/main/java/com/demo/utils/HttpClientUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/dw-chart/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/dw-chart/src/main/resources/config/config.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/dw-chart/src/main/resources/static/assets/css/bootstrap-datetimepicker.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/dw-chart/src/main/resources/static/assets/css/bootstrap-theme.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/dw-chart/src/main/resources/static/assets/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/dw-chart/src/main/resources/static/assets/css/custom-styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/dw-chart/src/main/resources/static/assets/css/font-awesome.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/dw-chart/src/main/resources/static/assets/font-awesome/fonts/fontawesome-webfontba72.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/dw-chart/src/main/resources/static/assets/font-awesome/fonts/fontawesome-webfontba72.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/dw-chart/src/main/resources/static/assets/font-awesome/fonts/fontawesome-webfontba72.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/dw-chart/src/main/resources/static/assets/font-awesome/fonts/fontawesome-webfontba72.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/dw-chart/src/main/resources/static/assets/font-awesome/fonts/fontawesome-webfontd41d.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/dw-chart/src/main/resources/static/assets/fonts/glyphicons-halflings-regular.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/dw-chart/src/main/resources/static/assets/fonts/glyphicons-halflings-regular.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/dw-chart/src/main/resources/static/assets/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/dw-chart/src/main/resources/static/assets/fonts/glyphicons-halflings-regular.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/dw-chart/src/main/resources/static/assets/fonts/glyphicons-halflings-regulard41d.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/dw-chart/src/main/resources/static/assets/js/bootstrap-datetimepicker.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/dw-chart/src/main/resources/static/assets/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/dw-chart/src/main/resources/static/assets/js/chart-data.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/dw-chart/src/main/resources/static/assets/js/chart.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/dw-chart/src/main/resources/static/assets/js/china.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/dw-chart/src/main/resources/static/assets/js/custom-scripts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/dw-chart/src/main/resources/static/assets/js/custom.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/dw-chart/src/main/resources/static/assets/js/dataTables/dataTables.bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/dw-chart/src/main/resources/static/assets/js/dataTables/dataTables.bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/dw-chart/src/main/resources/static/assets/js/dataTables/jquery.dataTables.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/dw-chart/src/main/resources/static/assets/js/easypiechart-data.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/dw-chart/src/main/resources/static/assets/js/easypiechart.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/dw-chart/src/main/resources/static/assets/js/echarts.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/dw-chart/src/main/resources/static/assets/js/jquery-1.10.2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/dw-chart/src/main/resources/static/assets/js/jquery.metisMenu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/dw-chart/src/main/resources/static/assets/js/morris/morris-0.4.3.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/dw-chart/src/main/resources/static/assets/js/morris/morris.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/dw-chart/src/main/resources/static/assets/js/morris/raphael-2.1.0.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/dw-chart/src/main/resources/templates/chart.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/dw-chart/src/main/resources/templates/empty.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/dw-chart/src/main/resources/templates/form.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/dw-chart/src/main/resources/templates/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/dw-chart/src/main/resources/templates/index1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/dw-chart/src/main/resources/templates/map.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/dw-chart/src/main/resources/templates/tab-panel.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/dw-chart/src/main/resources/templates/table.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/dw-chart/src/main/resources/templates/ui-elements.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/dw-chart/src/test/java/com/demo/DemoApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/dw-chart/src/test/java/com/demo/utils/GetDateTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/dw-chart/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/dw-chart/target/classes/config/config.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/dw-chart/target/classes/static/assets/css/bootstrap-datetimepicker.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/dw-chart/target/classes/static/assets/css/bootstrap-theme.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/dw-chart/target/classes/static/assets/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/dw-chart/target/classes/static/assets/css/custom-styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/dw-chart/target/classes/static/assets/css/font-awesome.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/dw-chart/target/classes/static/assets/font-awesome/fonts/fontawesome-webfontba72.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/dw-chart/target/classes/static/assets/font-awesome/fonts/fontawesome-webfontba72.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/dw-chart/target/classes/static/assets/font-awesome/fonts/fontawesome-webfontba72.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/dw-chart/target/classes/static/assets/font-awesome/fonts/fontawesome-webfontba72.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/dw-chart/target/classes/static/assets/font-awesome/fonts/fontawesome-webfontd41d.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/dw-chart/target/classes/static/assets/fonts/glyphicons-halflings-regular.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/dw-chart/target/classes/static/assets/fonts/glyphicons-halflings-regular.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/dw-chart/target/classes/static/assets/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/dw-chart/target/classes/static/assets/fonts/glyphicons-halflings-regular.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/dw-chart/target/classes/static/assets/fonts/glyphicons-halflings-regulard41d.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/dw-chart/target/classes/static/assets/js/bootstrap-datetimepicker.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/dw-chart/target/classes/static/assets/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/dw-chart/target/classes/static/assets/js/chart-data.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/dw-chart/target/classes/static/assets/js/chart.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/dw-chart/target/classes/static/assets/js/china.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/dw-chart/target/classes/static/assets/js/custom-scripts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/dw-chart/target/classes/static/assets/js/custom.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/dw-chart/target/classes/static/assets/js/dataTables/dataTables.bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/dw-chart/target/classes/static/assets/js/dataTables/dataTables.bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/dw-chart/target/classes/static/assets/js/dataTables/jquery.dataTables.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/dw-chart/target/classes/static/assets/js/easypiechart-data.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/dw-chart/target/classes/static/assets/js/easypiechart.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/dw-chart/target/classes/static/assets/js/echarts.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/dw-chart/target/classes/static/assets/js/jquery-1.10.2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/dw-chart/target/classes/static/assets/js/jquery.metisMenu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/dw-chart/target/classes/static/assets/js/morris/morris-0.4.3.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/dw-chart/target/classes/static/assets/js/morris/morris.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/dw-chart/target/classes/static/assets/js/morris/raphael-2.1.0.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/dw-chart/target/classes/templates/chart.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/dw-chart/target/classes/templates/empty.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/dw-chart/target/classes/templates/form.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/dw-chart/target/classes/templates/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/dw-chart/target/classes/templates/index1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/dw-chart/target/classes/templates/map.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/dw-chart/target/classes/templates/tab-panel.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/dw-chart/target/classes/templates/table.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/dw-chart/target/classes/templates/ui-elements.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/gmall-0225.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/gmall-canal/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/gmall-canal/src/main/java/com/atguigu/app/CanalClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/gmall-canal/src/main/java/com/atguigu/utils/MyKafkaSender.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/gmall-common/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/gmall-common/src/main/java/com/atguigu/FinalVariable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/gmall-publisher/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/gmall-publisher/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/gmall-publisher/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/gmall-publisher/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/gmall-publisher/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/gmall-publisher/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/gmall-publisher/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/gmall-publisher/src/main/java/com/example/gmallpublisher/GmallPublisherApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/gmall-publisher/src/main/java/com/example/gmallpublisher/controller/DauController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/gmall-publisher/src/main/java/com/example/gmallpublisher/mapper/DauMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/gmall-publisher/src/main/java/com/example/gmallpublisher/mapper/OrderMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/gmall-publisher/src/main/java/com/example/gmallpublisher/service/DauService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/gmall-publisher/src/main/java/com/example/gmallpublisher/service/OrderService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/gmall-publisher/src/main/java/com/example/gmallpublisher/service/impl/DauServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/gmall-publisher/src/main/java/com/example/gmallpublisher/service/impl/OrderServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/gmall-publisher/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/gmall-publisher/src/main/resources/mapper/DauMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/gmall-publisher/src/main/resources/mapper/OrderMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/gmall-realtime/gmall-realtime.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/gmall-realtime/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/gmall-realtime/src/main/resources/config.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/gmall-realtime/src/main/resources/log4j.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/gmall-realtime/src/main/scala/com/atguigu/Utils/LoadProperties.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/gmall-realtime/src/main/scala/com/atguigu/Utils/MyEsUtil.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/gmall-realtime/src/main/scala/com/atguigu/Utils/MyKafkaUtils.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/gmall-realtime/src/main/scala/com/atguigu/analyse/AlertApp.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/gmall-realtime/src/main/scala/com/atguigu/analyse/DAU_Analyse.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/gmall-realtime/src/main/scala/com/atguigu/analyse/GmvApp.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/gmall-realtime/src/main/scala/com/atguigu/analyse/OrderApp.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/gmall-realtime/src/main/scala/com/atguigu/analyse/UserApp.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/gmall-realtime/src/main/scala/com/atguigu/bean/CouponAlertInfo.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/gmall-realtime/src/main/scala/com/atguigu/bean/EventLog.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/gmall-realtime/src/main/scala/com/atguigu/bean/OrderDetail.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/gmall-realtime/src/main/scala/com/atguigu/bean/OrderInfo.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/gmall-realtime/src/main/scala/com/atguigu/bean/SaleDetail.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/gmall-realtime/src/main/scala/com/atguigu/bean/StartUpLog.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/gmall-realtime/src/main/scala/com/atguigu/bean/UserInfo.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/gmall-realtime/src/main/scala/com/atguigu/handler/DAU_Handler.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/gmall-realtime/target/classes/config.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/gmall-realtime/target/classes/log4j.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/hs_err_pid36660.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/hs_err_pid37856.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/replay_pid36660.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/gmall-0225/replay_pid37856.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/业务问题总结.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/交易额需求分析.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/实时项目结构分析.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/日活实时分析.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/日活需求分析.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/灵活分析需求.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../实时项目/预警需求分析.md" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +240,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/atguigu/output" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="build.tools" />
   </component>
   <component name="RecentsManager">
@@ -153,17 +321,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.PartDriver" />
@@ -199,6 +356,7 @@
       <workItem from="1619003487662" duration="4929000" />
       <workItem from="1619057587498" duration="7517000" />
       <workItem from="1619076198801" duration="880000" />
+      <workItem from="1626336239624" duration="1722000" />
     </task>
     <servers />
   </component>

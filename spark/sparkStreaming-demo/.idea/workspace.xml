@@ -5,41 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6c318408-72a7-4dcd-9164-c1835bc39d3e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../flink/flink-demo/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../flink/flink-demo/src/main/java/com/atguigu/KeyedStream/Max.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../flink/flink-demo/src/main/java/com/atguigu/KeyedStream/Reduce.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../flink/flink-demo/src/main/java/com/atguigu/KeyedStream/Sum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../flink/flink-demo/src/main/java/com/atguigu/bean/Water.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../flink/flink-demo/src/main/java/com/atguigu/process/Process.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../flink/flink-demo/src/main/java/com/atguigu/read/ReadFromCollection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../flink/flink-demo/src/main/java/com/atguigu/read/ReadFromCustomSource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../flink/flink-demo/src/main/java/com/atguigu/read/ReadFromFile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../flink/flink-demo/src/main/java/com/atguigu/read/ReadFromKafak.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../flink/flink-demo/src/main/java/com/atguigu/read/ReadFromSocket.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../flink/flink-demo/src/main/java/com/atguigu/repartition/Repartition.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../flink/flink-demo/src/main/java/com/atguigu/sink/ESsink.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../flink/flink-demo/src/main/java/com/atguigu/sink/KafkaSink.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../flink/flink-demo/src/main/java/com/atguigu/sink/MyRedisSink.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../flink/flink-demo/src/main/java/com/atguigu/transform/Connect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../flink/flink-demo/src/main/java/com/atguigu/transform/Filter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../flink/flink-demo/src/main/java/com/atguigu/transform/FlatMap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../flink/flink-demo/src/main/java/com/atguigu/transform/KeyBy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../flink/flink-demo/src/main/java/com/atguigu/transform/Map.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../flink/flink-demo/src/main/java/com/atguigu/transform/Shuffle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../flink/flink-demo/src/main/java/com/atguigu/transform/Union.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../flink/flink-demo/src/main/java/com/atguigu/wordCount/Flink03_WordCount_UnBounded.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../flink/flink-demo/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../flink/flink-demo/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../flink/flink-demo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../flink/flink-demo/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../flink/flink-demo/src/main/java/com/atguigu/Flink01_WordCount_Batch.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../flink/flink-demo/src/main/java/com/atguigu/wordCount/Flink01_WordCount_Batch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../flink/flink-demo/src/main/java/com/atguigu/Flink02_WordCount_Bounded.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../flink/flink-demo/src/main/java/com/atguigu/wordCount/Flink02_WordCount_Bounded.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../flink/flink-demo/src/main/java/com/atguigu/Flink03_WordCount_UnBounded.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../flink/flink-demo/target/flink-demo-1.0-SNAPSHOT-jar-with-dependencies.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../flink/flink-demo/target/flink-demo-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../flink/flink-demo/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../flink/flink-demo/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../flink/flink-demo/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../flink/flink-demo/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../flink/flink总结.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../flink/flink总结.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spark-demo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spark-demo/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,6 +43,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../spark-demo" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.38450074" />
@@ -93,6 +60,7 @@
       <updated>1625047940418</updated>
       <workItem from="1625047941600" duration="338000" />
       <workItem from="1626312717840" duration="2000" />
+      <workItem from="1626334156196" duration="619000" />
     </task>
     <servers />
   </component>

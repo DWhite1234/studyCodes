@@ -5,7 +5,7 @@
     3.Combiner运行与每个MapTask上,而reducer是接受所有的MapTask的运算结果,进行
     聚合
     4.Combiner的作用是对每一个的MapTask的输出提前进行局部汇总,减小网络传输
-   *5.最重要的是Combiner虽然有这些有点,但是使用的前提是不能影响最终结果
+   *5.最重要的是Combiner虽然有这些优点,但是使用的前提是不能影响最终结果
 
    比如:算平均数
    MapTask1:

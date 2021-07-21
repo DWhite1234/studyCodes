@@ -29,3 +29,4 @@ har归档
 # 2.hadoop 3.x新特性
 1.纠删码
     查看集群支持的纠删码策略hdfs ec -listPolicies                
+

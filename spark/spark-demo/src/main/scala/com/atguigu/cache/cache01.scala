@@ -19,7 +19,7 @@ object cache01 {
     }
     /*
     1.调用缓存,cache调用不会立即生效,当遇到行动算子的时候才会生效
-    2.cache 底层调用的persist,策略默认为MEMORY_ONLY 
+    2.cache 底层调用的persist,策略默认为MEMORY_ONLY
     5.缓存存储在内存中
     3.使用persist 可以指定缓存策略
     4.使用缓存会增加血缘关系,但是不会中断血缘关系

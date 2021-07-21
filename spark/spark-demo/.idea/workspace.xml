@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5711e5a-f948-4ff8-b55c-dbeeedaf8dc2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/atguigu/cache/cache02.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/atguigu/cache/cache02.scala" afterDir="false" />
-    </list>
+    <list default="true" id="e5711e5a-f948-4ff8-b55c-dbeeedaf8dc2" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -40,8 +37,8 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="jar://$PROJECT_DIR$/../../../developInstall/localRepository/org/apache/spark/spark-core_2.12/3.0.0/spark-core_2.12-3.0.0-sources.jar!/org/apache/spark/shuffle/sort/BypassMergeSortShuffleWriter.java" root0="SKIP_INSPECTION" />
     <setting file="jar://$PROJECT_DIR$/../../../developInstall/localRepository/org/scala-lang/scala-library/2.12.10/scala-library-2.12.10-sources.jar!/scala/package.scala" root0="SKIP_INSPECTION" />
+    <setting file="jar://$PROJECT_DIR$/../../../developInstall/localRepository/org/apache/spark/spark-core_2.12/3.0.0/spark-core_2.12-3.0.0-sources.jar!/org/apache/spark/shuffle/sort/BypassMergeSortShuffleWriter.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -74,7 +71,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.38450074" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -225,6 +222,7 @@
       <workItem from="1624971823161" duration="77000" />
       <workItem from="1624971906632" duration="1331000" />
       <workItem from="1625124269352" duration="1785000" />
+      <workItem from="1626334183727" duration="652000" />
     </task>
     <servers />
   </component>
